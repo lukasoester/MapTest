@@ -1,0 +1,8 @@
+Map als Einstiegspunkt, über liste filterbar gebiet, bio, Typ, animation über jahre (allenfalls nur slider)
+
+Hover über Kanton (nach kurzer zeit), kleinesPopup mit smalansicht eines Sunbursts und Sneaky (mit den aktuellen Filtern). Mit klick auf Sunburst/Sneaky öffnet sich dieses gross für den gewählten Kanton und erlaubt im neuen Fenster das verändern der gewünschten filter.
+
+Sunburst: Erlaubt zoom gemäss beispiel
+
+Sneaky: Zeigt Verteilung Bio auf Beitragstyp, Gebiet, Betriebsart (optimal wäre wenn diese beliebg verschoben werden können, um die individuell gewünschten Informationen am besten darzustellen)
+
