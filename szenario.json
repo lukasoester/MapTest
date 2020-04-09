@@ -1,0 +1,235 @@
+[
+    {
+    "Key": "AG",
+    "Szenario1": "4101.36",
+    "Szenario2": "4106.62",
+    "Szenario3": "5336.56",
+    "Szenario4": "5341.82",
+    "Kanton": "Aargau"
+},
+
+{
+    "Key": "AR",
+    "Szenario1": "342.98",
+    "Szenario2": "355.2",
+    "Szenario3": "496.29",
+    "Szenario4": "508.51",
+    "Kanton": "Appenzell Ausserrhoden"
+},
+
+{
+    "Key": "AI",
+    "Szenario1": "127.43",
+    "Szenario2": "129.45",
+    "Szenario3": "181.31",
+    "Szenario4": "183.33",
+    "Kanton": "Appenzell Innerrhoden"
+},
+
+{
+    "Key": "BL",
+    "Szenario1": "1430.84",
+    "Szenario2": "1445.84",
+    "Szenario3": "1941.69",
+    "Szenario4": "1956.69",
+    "Kanton": "Basel-Landschaft"
+},
+
+{
+    "Key": "BS",
+    "Szenario1": "490.35",
+    "Szenario2": "527.71",
+    "Szenario3": "656.1",
+    "Szenario4": "693.46",
+    "Kanton": "Basel-Stadt"
+},
+
+{
+    "Key": "BE",
+    "Szenario1": "7178.86",
+    "Szenario2": "7346.78",
+    "Szenario3": "9417.26",
+    "Szenario4": "9585.18",
+    "Kanton": "Bern"
+},
+
+{
+    "Key": "FR",
+    "Szenario1": "2599.94",
+    "Szenario2": "2631.7",
+    "Szenario3": "3470.13",
+    "Szenario4": "3501.89",
+    "Kanton": "Freiburg"
+},
+
+{
+    "Key": "GE",
+    "Szenario1": "1579.74",
+    "Szenario2": "1615.22",
+    "Szenario3": "1996.22",
+    "Szenario4": "2031.7",
+    "Kanton": "Genf"
+},
+
+{
+    "Key": "GL",
+    "Szenario1": "254.54",
+    "Szenario2": "254.26",
+    "Szenario3": "336.54",
+    "Szenario4": "336.26",
+    "Kanton": "Glarus"
+},
+
+{
+    "Key": "GR",
+    "Szenario1": "2029.97",
+    "Szenario2": "2140.32",
+    "Szenario3": "2866.44",
+    "Szenario4": "2976.79",
+    "Kanton": "Graubünden"
+},
+
+{
+    "Key": "JU",
+    "Szenario1": "797.46",
+    "Szenario2": "789.87",
+    "Szenario3": "1044.23",
+    "Szenario4": "1036.64",
+    "Kanton": "Jura"
+},
+
+{
+    "Key": "LU",
+    "Szenario1": "2443.51",
+    "Szenario2": "2518.77",
+    "Szenario3": "3256.49",
+    "Szenario4": "3331.75",
+    "Kanton": "Luzern"
+},
+
+{
+    "Key": "NE",
+    "Szenario1": "970.81",
+    "Szenario2": "1019.36",
+    "Szenario3": "1335.45",
+    "Szenario4": "1384",
+    "Kanton": "Neuenburg"
+},
+
+{
+    "Key": "NW",
+    "Szenario1": "185.13",
+    "Szenario2": "190.88",
+    "Szenario3": "252.9",
+    "Szenario4": "258.65",
+    "Kanton": "Nidwalden"
+},
+
+{
+    "Key": "OW",
+    "Szenario1": "259.04",
+    "Szenario2": "266.1",
+    "Szenario3": "360.14",
+    "Szenario4": "367.2",
+    "Kanton": "Obwalden"
+},
+
+{
+    "Key": "SH",
+    "Szenario1": "527.02",
+    "Szenario2": "528.59",
+    "Szenario3": "689.84",
+    "Szenario4": "691.41",
+    "Kanton": "Schaffhausen"
+},
+
+{
+    "Key": "SZ",
+    "Szenario1": "805.57",
+    "Szenario2": "838.75",
+    "Szenario3": "1146.55",
+    "Szenario4": "1179.73",
+    "Kanton": "Schwyz"
+},
+
+{
+    "Key": "SO",
+    "Szenario1": "1786.63",
+    "Szenario2": "1794.41",
+    "Szenario3": "2328.27",
+    "Szenario4": "2336.05",
+    "Kanton": "Solothurn"
+},
+
+{
+    "Key": "SG",
+    "Szenario1": "3113.33",
+    "Szenario2": "3177.74",
+    "Szenario3": "4250.11",
+    "Szenario4": "4314.52",
+    "Kanton": "St. Gallen"
+},
+
+{
+    "Key": "TG",
+    "Szenario1": "2133.8",
+    "Szenario2": "2106.85",
+    "Szenario3": "2806.28",
+    "Szenario4": "2779.33",
+    "Kanton": "Thurgau"
+},
+
+{
+    "Key": "TI",
+    "Szenario1": "2612.65",
+    "Szenario2": "2609.43",
+    "Szenario3": "3619.85",
+    "Szenario4": "3616.63",
+    "Kanton": "Tessin"
+},
+
+{
+    "Key": "UR",
+    "Szenario1": "215.99",
+    "Szenario2": "219.33",
+    "Szenario3": "296.42",
+    "Szenario4": "299.76",
+    "Kanton": "Uri"
+},
+
+{
+    "Key": "VS",
+    "Szenario1": "3108.77",
+    "Szenario2": "3136.6",
+    "Szenario3": "4218.34",
+    "Szenario4": "4246.17",
+    "Kanton": "Wallis"
+},
+
+{
+    "Key": "VD",
+    "Szenario1": "4746.49",
+    "Szenario2": "4848.53",
+    "Szenario3": "6262.81",
+    "Szenario4": "6364.85",
+    "Kanton": "Waadt"
+},
+
+{
+    "Key": "ZG",
+    "Szenario1": "528.37",
+    "Szenario2": "567.16",
+    "Szenario3": "734.51",
+    "Szenario4": "773.3",
+    "Kanton": "Zug"
+},
+
+{
+    "Key": "ZH",
+    "Szenario1": "5617.11",
+    "Szenario2": "5867.68",
+    "Szenario3": "7597.41",
+    "Szenario4": "78.47.98",
+    "Kanton": "Zürich"
+}
+]
