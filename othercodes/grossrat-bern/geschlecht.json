@@ -1,0 +1,167 @@
+{
+    "links":[
+        {
+            "source": "Bau-Verkehr-undEnergie",
+            "target": "Männlich",
+            "value": 14,
+            "nodeColorTarget": "blue"
+        },
+        {
+            "source": "Bau-Verkehr-undEnergie",
+            "target": "Weiblich",
+            "value": 1,
+            "nodeColorTarget": "purple"
+        },
+        {
+            "source": "Erziehung",
+            "target": "Männlich",
+            "value": 14,
+            "nodeColorTarget": "blue"
+        },
+        {
+            "source": "Erziehung",
+            "target": "Weiblich",
+            "value": 7,
+            "nodeColorTarget": "purple"
+        },
+        {
+            "source": "Finanzen",
+            "target": "Männlich",
+            "value": 11,
+            "nodeColorTarget": "blue"
+        },
+        {
+            "source": "Finanzen",
+            "target": "Weiblich",
+            "value": 9,
+            "nodeColorTarget": "purple"
+        },
+        {
+            "source": "Gesundheit-undFürsorge",
+            "target": "Männlich",
+            "value": 19,
+            "nodeColorTarget": "blue"
+        },
+        {
+            "source": "Gesundheit-undFürsorge",
+            "target": "Weiblich",
+            "value": 9,
+            "nodeColorTarget": "purple"
+        },
+        {
+            "source": "Justiz-Gemeinde-undKirchen",
+            "target": "Männlich",
+            "value": 3,
+            "nodeColorTarget": "blue"
+        },
+        {
+            "source": "Justiz-Gemeinde-undKirchen",
+            "target": "Weiblich",
+            "value": 1,
+            "nodeColorTarget": "purple"
+        },
+        {
+            "source": "Polizei-undMilitär",
+            "target": "Männlich",
+            "value": 10,
+            "nodeColorTarget": "blue"
+        },
+        {
+            "source": "Polizei-undMilitär",
+            "target": "Weiblich",
+            "value": 3,
+            "nodeColorTarget": "purple"
+        },
+        {
+            "source": "Staatskanzlei",
+            "target": "Männlich",
+            "value": 8,
+            "nodeColorTarget": "blue"
+        },
+        {
+            "source": "Volkswirtschaft",
+            "target": "Männlich",
+            "value": 6,
+            "nodeColorTarget": "blue"
+        },
+        {
+            "source": "Volkswirtschaft",
+            "target": "Weiblich",
+            "value": 1,
+            "nodeColorTarget": "purple"
+        },
+        {
+            "source": "Männlich",
+            "target": "Abgelehnt",
+            "value": 25,
+            "nodeColorTarget": "red"
+        },
+        {
+            "source": "Männlich",
+            "target": "Angenommen",
+            "value": 60,
+            "nodeColorTarget": "green"
+        },
+        {
+            "source": "Weiblich",
+            "target": "Abgelehnt",
+            "value": 6,
+            "nodeColorTarget": "red"
+        },
+        {
+            "source": "Weiblich",
+            "target": "Angenommen",
+            "value": 25,
+            "nodeColorTarget": "green"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "Männlich",
+            "nodeColor": "blue"
+        },
+        {
+            "name": "Weiblich",
+            "nodeColor": "purple"
+        },
+        {
+            "name": "Abgelehnt",
+            "nodeColor": "red"
+        },
+        {
+            "name": "Angenommen",
+            "nodeColor": "green"
+        },
+        {
+            "name": "Bau-Verkehr-undEnergie",
+            "nodeColor": "darkgray"
+        },
+        {
+            "name": "Erziehung",
+            "nodeColor": "darkgray"
+        },
+        {
+            "name": "Finanzen",
+            "nodeColor": "darkgray"
+        },
+        {
+            "name": "Gesundheit-undFürsorge",
+            "nodeColor": "darkgray"
+        },
+        {
+            "name": "Justiz-Gemeinde-undKirchen",
+            "nodeColor": "darkgray"
+        },
+        {
+            "name": "Polizei-undMilitär",
+            "nodeColor": "darkgray"
+        },
+        {
+            "name": "Staatskanzlei",
+            "nodeColor": "darkgray"
+        },
+        {
+            "name": "Volkswirtschaft",
+            "nodeColor": "darkgray"
+        }
+    ]}

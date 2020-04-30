@@ -1,0 +1,29 @@
+canton,amount,no,ex,none,im,pri,keineantwort,text,text2,text3,text4
+CH,40,0,1,39,6,5,4,Auf Bundesebene sind unsere Anfragen grösstenteils an den Schutzvorkehrungen gescheitert. Das beweist die Anwendung, eines Verschlüsselungszertifikates. Fünf Behörden geben explizit an ein solches zu verwenden. Jedoch nur eine, deren fünf nutzt eine Verschlüsselung der Metadaten.
+ZH,38,33,4,0,36,0,2,Aus dem Kanton Zuerich erhalten wir nur wenige Antworten. Diese bestaetigen aber die Anwendung, einer End-to-End Verschluesselung. Metadaten sind sichtbar.
+BE,49,49,0,0,0,0,49,Aus diesem Kanton haben wir keine Antworten erhalten. Unsere Anfragen sind an den Schutzvorkehrungen gescheitert., De facto wird also eine Verschluesselung angewendet.
+LU,29,29,0,0,0,0,29,Im Kanton Luzern sind 29 Behoerden fuer den elektronischen Rechtsverkehr aufgelistet. Sie nutzen die Plattform, PrivaSphere. Die End-to-End Verschluesselung wird angeboten. Uebermittelte Metadaten werden nicht verschluesselt., Letzteres wird vom Gesetzgeber nicht vorgeschrieben.
+UR,8,0,8,0,0,0,8,Uri hat noch keine E2E-Verschluesselung. Sie ist aber vorgesehen.
+SZ,35,35,0,0,14,0,21,Schwyz scheint eher dezentral organisiert zu sein. Die Behoerden sind zum Teil Kunden von PrivaSphere und, teilweise von der Post. Bei den antwortenden Behoerden wird die End-to-End Verschluesselung angeboten., Uebermittelte Metadaten werden nicht verschluesselt. Letzteres wird vom Gesetzgeber nicht vorgeschrieben. 
+OW,9,7,0,2,7,2,0,Sieben Behoerden haben nicht auf den Fragebogen reagiert. Zwei geben an weder E2E- noch Metadatenver-,schluesselung zu vollziehen.
+NW,8,6,0,2,6,2,0,Hier haben sechs Behoerden keine Auskunft gegeben. Zwei haben uns mitgeteilt weder E2E- noch Metadatenver-,schluesselung zu vollziehen.
+GL,5,5,0,0,5,0,0,Aus diesem Kanton haben wir keine Antworten erhalten. Die Verwendete Plattform ist IncaMail.
+ZG,8,8,0,0,1,0,7,Im Kanton Zug wird die End-to-End Verschluesselung umgesetzt.Uebermittelte Metadaten werden nicht, verschluesselt. Letzteres wird vom Gesetzgeber nicht vorgeschrieben.
+FR,31,31,0,0,0,0,31,Die Behoerden im Kanton Freiburg sind im elektronischen Rechtsverkehr ueber den Intermediaer IncaMail der, Schweizerischen Post zu erreichen. Die End-to-End Verschluesselung wird angeboten. Uebermittelte Metadaten, werden nicht verschluesselt. Letzteres wird vom Gesetzgeber nicht vorgeschrieben.
+SO,14,14,0,0,0,0,14,Aus diesem Kanton haben wir keine Antworten erhalten. Unsere Anfragen sind an den Schutzvorkehrungen gescheitert., De facto wird also eine Verschluesselung angewendet.
+BS,12,12,0,0,0,0,12,Aus diesem Kanton haben wir keine Antworten erhalten. Unsere Anfragen sind an den Schutzvorkehrungen gescheitert., De facto wird also eine Verschluesselung angewendet.
+BL,10,3,7,0,3,0,7,Die sieben Behoerden des Kantons Basel Landschaft die an der Studie teilgenommen haben benutzen IncaMail zur, Verschluesselung und schuetzen ebenso die Metadaten.
+SH,8,8,0,0,8,0,0,Leider hat keine schaffhauser Behoerde auf unsere Anfrage reagiert.
+AR,10,7,3,0,6,3,1,Im Kanton Appenzell Ausserrhoden wird die End-to-End Verschluesselung teilweise nicht umgesetzt und ist soweit, auch nicht vorgesehen. Allerdings werden hier die Metadaten geschuetzt. Mehrere Behoerden des Halbkantons, haben keine Auskunft gegeben.
+AI,7,7,0,0,7,0,0,Die elektronisch erreichbaren Behörden des Kantons Appenzell Innerrhoden haben nicht auf die Anfrage geantwortet.
+SG,55,0,55,0,0,55,0,Die elektronisch erreichbaren Behoerden des Kantons St.Gallen bieten keine End-to-End Verschluesselung an., Die Metadaten wiederum sind geschuetzt.
+GR,90,90,0,0,0,17,37,Die Behoerden im Kanton Graubuenden sind im elektronischen Rechtsverkehr ueber den Intermediaer IncaMail der, Schweizerischen Post zu erreichen. Die End-to-End Verschluesselung wird angeboten. Uebermittelte Metadaten werden, nicht verschluesselt. Letzteres wird vom Gesetzgeber nicht vorgeschrieben. Bei 17 buendner Behoerden ist keine Aussage, moeglich da sie nicht an der Studie Teil genommen haben.
+AG,41,9,0,29,0,9,32,Die Behoerden im Kanton Argau sind im elektronischen Rechtsverkehr ueber den Intermediaer IncaMail der, Schweizerischen Post zu erreichen. Die End-to-End Verschluesselung wird angeboten. Uebermittelte Metadaten, werden nicht verschluesselt. Letzteres wird vom Gesetzgeber nicht vorgeschrieben. Die Staatsanwaltschaften, haben keine Auskunft gegeben.
+TG,172,171,1,0,0,162,10,Zwei Behoerden koennen Auskunft geben und bestaetigen sowohl die End-to-End Verschluesselung anzubieten, als auch die Metadaten zu schuetzen.Weitere sechs Behoerden bieten die End-to-End Verschluesselung an und, alle uebrigen haben nicht geantwortet oder nicht Auskunft geben wollen.
+TI,15,0,15,0,15,0,0,Aus dem Kanton Tessin kamen keine Antworten zurueck. 
+VD,0,0,0,0,0,0,0,Keine Behoerden mit elektronischem Rechtsverkehr im Kanton Waadt.
+VS,7,7,0,0,5,0,2,Eine Behoerde kann Auskunft geben und bestaetigt sowohl die End-to-End Verschluesselung anzubieten, als auch die Metadaten zu schuetzen.Eine weitere Behoerde bietet die End-to-End Verschluesselung an, und die uebrigen haben nicht geantwortet.
+NE,2,2,0,0,0,0,2,Im Kanton Neuenburg sind kaum Behoerden auf elektronischem Weg zu erreichen. Anworten haben wir keine erhalten.
+GE,12,12,0,0,0,10,2,Unsere Anfragen sind in Genf an den Schutzvorkehrungen zweier Behoerden gescheitert. In diesen Faellen gibt, es also eine End-to-End Verschluesselung. Die andern haben bloss angegeben IncaMail zu nutzen.
+Bagnes,4,4,0,0,1,3,0,Aus dem Kanton Jura hat eine Behoerde an der Umfrage teilgenommen. Sie gibt an weder End-to-End noch Metadaten, zu verschluesseln.
+OTHER,27,4,5,4

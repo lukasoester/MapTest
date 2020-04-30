@@ -1,0 +1,20 @@
+{
+    "links":[
+    
+    {
+      "source": "Berggebiet",
+      "target": "Summe von B_RESSOURCENEFFIZIENZ",
+      "value": 1922
+    }
+   ],
+   "nodes": [
+       {
+           "name": "Berggebiet",
+           "nodeColor": "#FF7F00"
+       },
+       {
+           "name": "Summe von B_RESSOURCENEFFIZIENZ",
+           "nodeColor": "#3A5FCD"
+       }
+   ]
+}

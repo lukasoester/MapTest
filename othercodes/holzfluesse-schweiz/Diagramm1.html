@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<!-- Load d3.js -->
+<!--<script src="d3.js"></script>-->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<!-- Create a div where the graph will take place -->
+<div id="chart"></div>
+
+<!-- Create a div for the tooltip -->
+<div id="tooltip"></div>
+
+<style text="css">
+.animateBorder{
+	stroke-dasharray: 10;
+	//stroke: red !important;
+	stroke-width: 3px;
+	background: red;
+	-webkit-animation: mymove 5s infinite;
+	animation: mymove 1s linear infinite;
+}
+
+@-webkit-keyframes mymove {
+from {
+        stroke-dashoffset: 20;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes mymove {
+from {
+        stroke-dashoffset: 20;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+</style>
+
+
+<script>
+    
+    // create a matrix A:Import B: Export C: Energieholz D: Stammholz, E: Industrieholz F: Sonstiger Zu/Abfluss G:Holzernte
+var matrix = [
+  [0,  0, 36, 125, 51, 0, 0],
+  [0, 0, 0, 0, 0, 0, 645],
+  [36, 0, 0, 0, 0, 0, 2007],
+  [125, 0, 0, 0, 0, 0,2173],
+  [51, 0, 0, 0, 0, 0, 409],
+  [0,0,0,0,0,0,148], 
+  [0, 645, 2007, 2173, 409, 148, 0],    
+];
+    
+
+var margin = {left:10, top:-70, right:10, bottom:10},
+    width =  800 - margin.left - margin.right, // more flexibility: Math.min(window.innerWidth, 1000)
+    height =  800 - margin.top - margin.bottom, // same: Math.min(window.innerWidth, 1000)
+    innerRadius = Math.min(width, height) * .39,
+    outerRadius = innerRadius * 1.1;    
+
+var res = d3.chord()
+    .padAngle(0.1)
+    .sortSubgroups(d3.ascending)
+    (matrix)    
+    
+// create the svg area
+var svg = d3.select("#chart")
+  .append("svg")
+    .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+  .attr("transform", "translate(" + (width/2 + margin.left) + "," + (height/2 + margin.top) + ")")
+  .datum(res);
+
+
+
+
+var colors = ["black", "#33CC66", "#33FF66", "#33FF00", "#339933", "#66FF99", "green"]
+var colorsout = ["black", "red", "#996600", "#996600", "#996600", "#006699", "#33CC00"]
+    
+var names = ["Import", "Export", "Energieholz", "Stammholz", "Industrieholz", "Sonstiger Zu/Abfluss", "Holzernte"]
+
+var innerRadius=230;
+var outerRadius=250;
+
+
+
+// give this matrix to d3.chord(): it will calculates all the info we need to draw arc and ribbon
+
+
+
+
+var group = svg
+  .datum(res)
+  .append("g")
+  .selectAll("g")
+  .data(function(d) { return d.groups; })
+  .enter()
+
+
+
+var arcs = svg
+  .datum(res)
+  .append("g")
+  .selectAll("g")
+  .data(function(d) { return d.groups; })
+  .enter()
+  .append("g");
+
+
+// add the groups on the inner part of the circle
+
+  arcs.append("path")
+    .style("fill", function(d,i){ return colorsout[i] })
+    //.style("fill", "green")
+    .style("stroke", "black")
+    .attr("d", d3.arc()
+      .innerRadius(innerRadius)
+      .outerRadius(outerRadius)
+    )
+    .attr("class", "Out");
+    
+    
+    arcs.append("text")
+    .each(function(d) { d.angle = (d.startAngle + d.endAngle) / 2; })
+  .attr("dy", ".35em")
+  .attr("font-family", "sans-serif")
+  .attr("class", "titles")
+  .attr("text-anchor", function(d) { return d.angle > Math.PI ? "end" : null; })
+  .attr("transform", function(d) {
+    return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")"
+    + "translate(" + (outerRadius + 10) + ")"
+    + (d.angle > Math.PI ? "rotate(180)" : "");
+  })
+  .text(function(d,i) { return names[i]; });
+    
+     
+    
+
+// Add a tooltip div. Here I define the general feature of the tooltip: stuff that do not depend on the data point.
+// Its opacity is set to 0: we don't see it by default.
+var tooltip = d3.select("#chart")
+  .append("div")
+  .style("opacity", 0)
+  .attr("class", "tooltip")
+  .style("background-color", "white")
+  .style("border", "solid")
+  .style("border-width", "1px")
+  .style("border-radius", "5px")
+  .style("padding", "10px")
+
+// A function that change this tooltip when the user hover a point.
+// Its opacity is set to 1: we can now see it. Plus it set the text and position of tooltip depending on the datapoint (d)
+var showTooltip = function(d) {
+  tooltip
+    .style("opacity", 1)
+      .html("Von " + names[d.target.index] + " zu " + names[d.source.index] +" fliessen " + matrix[d.source.index][d.target.index] + " Einheiten in 1000m<sup>3</sup>.")
+    .style("left", (d3.event.pageX + 20) + "px")
+    .style("top", (d3.event.pageY - 28) + "px")
+    .style("position", "absolute")
+}
+
+// A function that change this tooltip when the leaves a point: just need to set opacity to 0 again
+var hideTooltip = function(d) {
+  tooltip
+    .transition()
+    .duration(1000)
+    .style("opacity", 0)
+	.style("left", "0px")
+    .style("top", "0px")
+}
+
+var showrelevant = function(d) {
+    
+    
+    
+    d3.selectAll(".links")
+    .style("opacity", 0.5)
+    d3.select(this)
+    .style("opacity", 1.0)
+	.classed("animateBorder", true)
+	
+	
+	this.parentNode.appendChild(this);
+    
+    
+    tooltip
+    .style("opacity", 1)
+      .html("Von " + names[d.target.index] + " zu " + names[d.source.index] +" fliessen " + matrix[d.source.index][d.target.index] + " Einheiten. [in 1000m<sup>3</sup>]")
+    .style("left", (d3.event.pageX + 15) + "px")
+    .style("top", (d3.event.pageY - 28) + "px")
+    .style("position", "absolute") // Absolut definieren sonst zeigt es unten an
+    
+}
+
+var resetshowrelevant = function(d){
+    tooltip
+    //.transition() Zu wenig schnell mit diesen Befehlen
+    //.duration(1000)
+    .style("opacity", 0)
+	.style("left", "0px")
+    .style("top", "0px")
+
+	
+    
+  d3.selectAll("path")
+    .style("opacity", 1.0)
+	.classed("animateBorder", false)
+}
+
+
+
+
+// Add the links between groups
+svg
+  .datum(res)
+  .append("g")
+  .selectAll("path")
+  .data(function(d) { return d; })
+  .enter()
+  .append("path")
+    .attr("d", d3.ribbon()
+      .radius(220)
+    )
+    .attr("class", "links")
+    .style("fill", "#69b3a2")
+    .style("stroke", "black")
+  //.on("mouseover", showTooltip )
+  //.on("mouseleave", hideTooltip )
+  .on("mouseenter", showrelevant)
+  .on("mouseleave", resetshowrelevant)
+    .style("fill", function(d){ return(colors[d.source.index]) }) // colors depend on the source group. Change to target otherwise.
+    .style("stroke", "black");
+
+</script>

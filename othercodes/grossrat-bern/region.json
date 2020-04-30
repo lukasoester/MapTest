@@ -1,0 +1,353 @@
+{
+    "links":[
+ {
+   "source": "Bau-Verkehr-undEnergie",
+   "target": "Bern",
+   "value": 2,
+   "nodeColorTarget": "blue"
+ },
+ {
+   "source": "Bau-Verkehr-undEnergie",
+   "target": "Biel-Seeland",
+   "value": 6,
+   "nodeColorTarget": "yellow"
+ },
+ {
+   "source": "Bau-Verkehr-undEnergie",
+   "target": "Mittelland-Süd",
+   "value": 3,
+   "nodeColorTarget": "orangered"
+ },
+ {
+   "source": "Bau-Verkehr-undEnergie",
+   "target": "Emmental",
+   "value": 3,
+   "nodeColorTarget": "lawngreen"
+ },
+ {
+   "source": "Bau-Verkehr-undEnergie",
+   "target": "Thun",
+   "value": 1,
+   "nodeColorTarget": "firebrick"
+ },
+ {
+   "source": "Erziehungs",
+   "target": "Mittelland-Süd",
+   "value": 2,
+   "nodeColorTarget": "orangered"
+ },
+ {
+   "source": "Erziehungs",
+   "target": "Mittelland-Nord",
+   "value": 19,
+   "nodeColorTarget": "chocolate"
+ },
+ {
+   "source": "Finanzen",
+   "target": "Bern",
+   "value": 7,
+   "nodeColorTarget": "blue"
+ },
+ {
+   "source": "Finanzen",
+   "target": "Berner Jura",
+   "value": 1,
+   "nodeColorTarget": "purple"
+ },
+ {
+   "source": "Finanzen",
+   "target": "Mittelland-Süd",
+   "value": 2,
+   "nodeColorTarget": "orangered"
+ },
+ {
+   "source": "Finanzen",
+   "target": "Mittelland-Nord",
+   "value": 5,
+   "nodeColorTarget": "chocolate"
+ },
+ {
+   "source": "Finanzen",
+   "target": "Emmental",
+   "value": 2,
+   "nodeColorTarget": "lawngreen"
+ },
+ {
+   "source": "Finanzen",
+   "target": "Oberland",
+   "value": 2,
+   "nodeColorTarget": "dimgray"
+ },
+ {
+   "source": "Finanzen",
+   "target": "Thun",
+   "value": 1,
+   "nodeColorTarget": "firebrick"
+ },
+ {
+   "source": "Gesundheit-undFürsorge",
+   "target": "Bern",
+   "value": 3,
+   "nodeColorTarget": "blue"
+ },
+ {
+   "source": "Gesundheit-undFürsorge",
+   "target": "Biel-Seeland",
+   "value": 8,
+   "nodeColorTarget": "yellow"
+ },
+ {
+   "source": "Gesundheit-undFürsorge",
+   "target": "Mittelland-Süd",
+   "value": 2,
+   "nodeColorTarget": "orangered"
+ },
+ {
+   "source": "Gesundheit-undFürsorge",
+   "target": "Mittelland-Nord",
+   "value": 5,
+   "nodeColorTarget": "chocolate"
+ },
+ {
+   "source": "Gesundheit-undFürsorge",
+   "target": "Oberland",
+   "value": 8,
+   "nodeColorTarget": "dimgray"
+ },
+ {
+   "source": "Gesundheit-undFürsorge",
+   "target": "Thun",
+   "value": 2,
+   "nodeColorTarget": "firebrick"
+ },
+ {
+   "source": "Justiz-Gemeinde-undKirchen",
+   "target": "Biel-Seeland",
+   "value": 1,
+   "nodeColorTarget": "yellow"
+ },
+ {
+   "source": "Justiz-Gemeinde-undKirchen",
+   "target": "Mittelland-Süd",
+   "value": 1,
+   "nodeColorTarget": "orangered"
+ },
+ {
+   "source": "Justiz-Gemeinde-undKirchen",
+   "target": "Thun",
+   "value": 2,
+   "nodeColorTarget": "firebrick"
+ },
+ {
+   "source": "Polizei-undMilitär",
+   "target": "Bern",
+   "value": 4,
+   "nodeColorTarget": "blue"
+ },
+ {
+   "source": "Polizei-undMilitär",
+   "target": "Berner Jura",
+   "value": 1,
+   "nodeColorTarget": "purple"
+ },
+ {
+   "source": "Polizei-undMilitär",
+   "target": "Biel-Seeland",
+   "value": 6,
+   "nodeColorTarget": "yellow"
+ },
+ {
+   "source": "Polizei-undMilitär",
+   "target": "Mittelland-Nord",
+   "value": 1,
+   "nodeColorTarget": "chocolate"
+ },
+ {
+   "source": "Polizei-undMilitär",
+   "target": "Oberland",
+   "value": 1,
+   "nodeColorTarget": "dimgray"
+ },
+ {
+   "source": "Staatskanzlei",
+   "target": "Mittelland-Nord",
+   "value": 8,
+   "nodeColorTarget": "chocolate"
+ },
+ {
+   "source": "Volkswirtschaft",
+   "target": "Bern",
+   "value": 1,
+   "nodeColorTarget": "blue"
+ },
+ {
+   "source": "Volkswirtschaft",
+   "target": "Mittelland-Nord",
+   "value": 6,
+   "nodeColorTarget": "chocolate"
+ },
+ {
+   "source": "Bern",
+   "target": "Abgelehnt",
+   "value": 10,
+   "nodeColorTarget": "red"
+ },
+ {
+   "source": "Berner Jura",
+   "target": "Abgelehnt",
+   "value": 1,
+   "nodeColorTarget": "red"
+ },
+ {
+   "source": "Biel-Seeland",
+   "target": "Abgelehnt",
+   "value": 3,
+   "nodeColorTarget": "red"
+ },
+ {
+   "source": "Mittelland-Süd",
+   "target": "Abgelehnt",
+   "value": 2,
+   "nodeColorTarget": "red"
+ },
+ {
+   "source": "Mittelland-Nord",
+   "target": "Abgelehnt",
+   "value": 9,
+   "nodeColorTarget": "red"
+ },
+ {
+   "source": "Oberland",
+   "target": "Abgelehnt",
+   "value": 5,
+   "nodeColorTarget": "red"
+ },
+ {
+   "source": "Thun",
+   "target": "Abgelehnt",
+   "value": 1,
+   "nodeColorTarget": "red"
+ },
+ {
+   "source": "Bern",
+   "target": "Angenommen",
+   "value": 7,
+   "nodeColorTarget": "green"
+ },
+ {
+   "source": "Berner Jura",
+   "target": "Angenommen",
+   "value": 1,
+   "nodeColorTarget": "green"
+ },
+ {
+   "source": "Biel-Seeland",
+   "target": "Angenommen",
+   "value": 18,
+   "nodeColorTarget": "green"
+ },
+ {
+   "source": "Mittelland-Süd",
+   "target": "Angenommen",
+   "value": 8,
+   "nodeColorTarget": "green"
+ },
+ {
+   "source": "Mittelland-Nord",
+   "target": "Angenommen",
+   "value": 35,
+   "nodeColorTarget": "green"
+ },
+ {
+   "source": "Emmental",
+   "target": "Angenommen",
+   "value": 5,
+   "nodeColorTarget": "green"
+ },
+ {
+   "source": "Oberland",
+   "target": "Angenommen",
+   "value": 6,
+   "nodeColorTarget": "green"
+ },
+ {
+   "source": "Thun",
+   "target": "Angenommen",
+   "value": 5,
+   "nodeColorTarget": "green"
+ }
+],
+    "nodes": [
+ {
+   "name": "Bern",
+   "nodeColor": "blue"
+ },
+ {
+   "name": "Berner Jura",
+   "nodeColor": "purple"
+ },
+ {
+   "name": "Biel-Seeland",
+   "nodeColor": "yellow"
+ },
+ {
+   "name": "Mittelland-Süd",
+   "nodeColor": "orangered"
+ },
+ {
+   "name": "Mittelland-Nord",
+   "nodeColor": "chocolate"
+ },
+ {
+   "name": "Emmental",
+   "nodeColor": "lawngreen"
+ },
+ {
+   "name": "Oberland",
+   "nodeColor": "dimgray"
+ },
+ {
+   "name": "Thun",
+   "nodeColor": "firebrick"
+ },
+ {
+   "name": "Abgelehnt",
+   "nodeColor": "red"
+ },
+ {
+   "name": "Angenommen",
+   "nodeColor": "green"
+ },
+ {
+   "name": "Bau-Verkehr-undEnergie",
+   "nodeColor": "darkgray"
+ },
+ {
+   "name": "Erziehungs",
+   "nodeColor": "darkgray"
+ },
+ {
+   "name": "Finanzen",
+   "nodeColor": "darkgray"
+ },
+ {
+   "name": "Gesundheit-undFürsorge",
+   "nodeColor": "darkgray"
+ },
+ {
+   "name": "Justiz-Gemeinde-undKirchen",
+   "nodeColor": "darkgray"
+ },
+ {
+   "name": "Polizei-undMilitär",
+   "nodeColor": "darkgray"
+ },
+ {
+   "name": "Staatskanzlei",
+   "nodeColor": "darkgray"
+ },
+ {
+   "name": "Volkswirtschaft",
+   "nodeColor": "darkgray"
+ }
+]}

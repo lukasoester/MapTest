@@ -1,0 +1,175 @@
+path {
+	cursor: pointer;
+}
+
+#cantons .highlighted,
+#legend_item rect[id="highlighted"],
+#bubbles .highlighted ,
+#bars .highlighted {
+	fill: gold;
+}
+
+#cantons path, 
+#legend_item rect {
+	stroke: #333;
+	stroke-width: .5;
+}
+
+#lakes path {
+	fill: #c6ecff;
+	stroke: none;
+}
+
+#lakes .highlighted {
+	fill: #5e66ff;/*#66ecff;*/
+}
+
+#info {
+	/*background: yellow;*/
+	color: red;
+	padding: 0 0;
+	margin: 0 0;
+}
+#info ul {
+	height: 36px;
+	padding: 2px 0;
+	margin: 0 0;
+	text-decoration: none;
+}
+
+.hidden {
+	display: none; 
+}
+/*-------------*/
+#bars {
+	font: 10px sans-serif;
+}
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+.bar {
+	stroke-width:0.5;
+}
+
+.bar:hover {
+	stroke-width:5.0;
+}
+
+.x.axis path {
+	display: none;
+}
+
+.d3-tip {
+	line-height: 1;
+	font-weight: bold;
+	padding: 12px;
+	background: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	border-radius: 2px;
+}
+
+.d3-tip:after {
+	box-sizing: border-box;
+	display: inline;
+	font-size: 10px;
+	width: 100%;
+	line-height: 1;
+	color: rgba(0, 0, 0, 0.8);
+	content: "\25BC";
+	position: absolute;
+	text-align: center;
+}
+
+.d3-tip.n:after {
+	margin: -1px 0 0 0;
+	top: 100%;
+	left: 0;
+}
+
+.colmask {
+	line-height: 1.5;
+}
+	.containers {
+	height: 264px;
+}
+
+#beschreibung_page .colmask h4 {
+	padding: 0;
+	margin: 0;
+}
+#beschreibung_page .colmask ul {
+	padding-left: 22px;
+	list-style-type: none;
+	margin: 0;
+}
+#beschreibung_page .colmask ul li:before {
+	content:"-";
+	position:relative;
+	left:-5px;
+}
+#beschreibung_page .colmask ul li {
+	text-indent:-5px;
+}
+
+
+
+
+
+#help_menu {
+	opacity:0.95;
+	display:none;
+}
+
+.help_panel {
+	background: #ececec;
+	border: 2px solid #999;
+	border-radius: 25px;
+	box-shadow: 0 2px 2px rgba(33,33,33,.1);
+	color: black;
+	padding: 20px;
+	display: block; 
+	position: fixed; 
+	z-index: 102; 
+	left: 25%; 
+	top: 50%; 
+	margin-left: -170px; 
+	margin-top: -350px;
+	line-height: 1;
+}
+
+.help_panel .close {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	border: 0;
+	color: #1e1e1e;
+	cursor: pointer;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: .5;
+	text-shadow: none;
+}
+
+.help_panel h1 {
+	padding-bottom: 10px;
+}
+
+.help_panel li {
+	padding-bottom: 3px;
+	background:none;
+}
+
+table {
+	border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.table_title {
+	margin-top: 3px;
+	background:white;
+	font-weight: 700;
+	border-bottom: 1px solid #999;
+}

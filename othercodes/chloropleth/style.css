@@ -1,0 +1,186 @@
+container {
+    max-width: 610px;
+    min-width: 500px;
+    width: 100%;
+    padding-right: 5px; !important;
+}
+
+body {
+    max-width: 610px;
+    font-family: "Lucida Sans"; !important;
+}
+container {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+col-lg-12 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+h1 {
+    font-size: 25px !important;
+}
+h1 small {
+    margin-left: 15px;
+}
+
+.map {
+    padding-right: 13px !important;
+}
+.map_legend {
+    padding-right: 0 !important;
+}
+#map-container {
+    width: 100%;
+    height: 450px;
+    background-color: #FFFFFF;
+    border: solid #D2D2D2 1px; 
+    margin-top: 20px;
+}
+.name_title{
+    font-size: 16px; color: #929292;
+}
+.name_value{
+    font-size: 12px; color: black;
+}
+.amount_title {
+    font-size: 16px; color: #929292;
+}
+.amount_value {
+    font-size: 12px; color: black;
+}
+
+.outer-col {
+     padding: 0px !important;
+}
+.inner-col {
+     padding: 5px !important;
+}
+
+div.tooltip {
+    position: absolute;			
+    text-align: center;			
+    width: 200px;
+    height: 40px;
+    padding: 5px;				
+    font: 12px sans-serif;		
+    color: white;
+    background: rgba(0,0,0,0.8);	
+    border: 0px;				
+    pointer-events: none;
+}
+
+
+/* Image Links */
+.snap_container {
+    position: relative;
+    width: 88px;
+    background-color: black;
+    margin: 3px;
+    margin-top: 10px;
+    float: left;
+}
+
+.snap_link{
+    opacity: 1;
+    display: block;
+    width: 88px;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    cursor: pointer;
+    border: 1px;
+    border-color: #D2D2D2;
+    border-style: solid;
+    position: relative;
+    float: left;
+}
+.snap_caption {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+.snap_container:hover .snap_link {
+    opacity: 0.4;
+}
+.snap_container_first:hover .snap_link {
+    opacity: 0.4;
+}
+.snap_container:hover .snap_caption {
+    opacity: 1;
+}
+.snap_container_first:hover .snap_caption {
+    opacity: 1;
+}
+.snap_text {
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    cursor: pointer;
+}
+
+img {
+    position: absolute;
+}
+
+.row {
+    width: 100%;
+}
+
+/* Buttons */
+.buttonZoom {
+    text-align: center;
+    position: absolute;	
+    top: 80px;
+    line-height: 25px;
+    width: 25px;					
+    height: 25px;	
+    color: white;
+    background: rgba(0,0,0,0.8);	
+    cursor: pointer;
+}
+#buttonZoomOut {
+    left: 25px;
+}
+#buttonZoomIn {
+    left: 52px;
+}
+#buttonZoomReset {
+    text-align: center;
+    position: absolute;	
+    top: 80px;
+    line-height: 25px;
+    width: 150px;					
+    height: 25px;	
+    color: white;
+    background: rgba(0,0,0,0.8);	
+    cursor: pointer;
+    left: 79px;
+}
+
+text, span {
+    font-family: "Lucida Sans";
+}
+
+text.caption {
+    font-size: 12px;
+}
+
+.description{
+    font-family: "Lucida Sans";
+    margin-top: 10px;
+    padding: 0 5px 0 5px;
+    font-size: 8pt;
+    text-align: justify;
+}
+
+span.amount_title, span.name_title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+}
+

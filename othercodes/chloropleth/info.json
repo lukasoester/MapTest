@@ -1,0 +1,11 @@
+{
+"title": "Chloropleth",
+"description": "Interaktive Karte mit Darstellung des mittleren versteuerten Einkommen nach Gemeinden.",
+"authors": [
+    {"name": "Lukas von Rotz", "email": "lukas.vonrotz@iwi.unibe.ch"},
+    {"name": "Alex Kräuchi", "email": "alex.kraeuchi@students.unibe.ch"}
+],
+"date": "2017-07-31",
+"category": "finances",
+"software_license": "MIT"
+}

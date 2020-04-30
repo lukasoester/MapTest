@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Schadstoffemissionen der Schweiz</title>
+
+    <link href="style.css" rel="stylesheet"/>
+
+    <script src="js/d3.min.js" type="application/javascript"></script>
+    <script src="js/topojson.min.js" type="application/javascript"></script>
+	<script>
+	// alle Variabeln in der URL auslesen
+		HTTP_GET_VARS=new Array();
+		strGET=document.location.search.substr(1,document.location.search.length);
+		if(strGET!=''){
+	    		gArr=strGET.split('&');
+	    		for(i=0;i<gArr.length;++i){
+				v='';vArr=gArr[i].split('=');
+				if(vArr.length>1){v=vArr[1];}
+				HTTP_GET_VARS[unescape(vArr[0])]=unescape(v);
+			}
+	    	}
+		var getYear;
+		// prüfen ob die Variable 'year' in der URL gesetzt ist
+		if(!HTTP_GET_VARS["year"]){
+			// Falls die Variable year in der URL nicht gesetzt ist auf 2007 setzten
+			getYear="2007";
+		}
+		else{
+			// Falls die Variable year in der URL gesetzt ist übermittelten Wert verwenden
+			getYear = HTTP_GET_VARS["year"];
+		}
+	</script>
+    <script src="script.js" type="application/javascript"></script>
+</head>
+
+<body>
+    
+    <div id='infoApp' class= 'infoApp'>
+        <h1 class='Infotitle' id='Infotitle'>Schadstoffemissionen der Schweiz</h1>
+        <div class='Infobox' id='Infobox'>Diese Applikation zeigt die Schadstoffemissionen in der Schweiz, basierend auf den Daten aus dem Schadstoffregister SwissPRTR des Bundesamtes für Umwelt. In einer ersten Darstellung werden die betrieblichen Schadstoffemissionen nach Kantonen aufgezeigt. In einer zweiten Visualisierung wird aufgezeigt, wie viel Emissionen den Betrieben und wie viel den diffusen Quellen zugeordnet werden. Unter diffusen Quellen werden die Emissionen verstanden, welche keinem meldepflichtigen Unternehmen zuzuordnen sind, wie beispielsweise Emissionen der Landwirtschaft. In den Jahren 2007, 2012 und 2013 sind keine Daten zu diesen diffusen Quellen vorhanden, weshalb in diesen Jahren ausschliesslich betriebliche Quellen aufgezeigt werden. <br> Weiter werden die Medien, über welche die Betriebe die verschiedenen Schadstoffe emitieren, angegeben. Die Medien des Ausstosses umfassen Emissionen in Luft, Boden, Wasser, Abwasser und bei der Abfall- respektive Sonderabfallproduktion das Medium Abfall, danach unterschieden, ob der Abfall vom Betrieb beseitigt oder verwertet wird.
+                <br>Weitere Spezifikationen und Erklärungen zu den Schadstoffen finden Sie 
+            im <a href='http://www.bafu.admin.ch/chemikalien/prtr/07159/index.html?lang=de'>Glossar</a> 
+            und die Rohdaten können im <a href='http://www.bafu.admin.ch/chemikalien/prtr/index.html?lang=de'>Schadstoffregister SwissPRTR </a> eingesehen werden.
+            <br>Autoren: Katrin Ismaier (katrinismaier@hispeed.ch) und Noel Sager (noel.sager@gmx.ch). Der <a href='script.js'>Skript-Code</a> und das <a href='style.css'>Stylesheet</a> dieser Applikation sind einsehbar.
+        </div>
+    </div>    
+    
+    <div class='app' id='app'>
+        <div id='title' class='title clearfix'>
+            <h1>Betriebliche Schadstoffemissionen nach Kantonen im Jahr <span id='year'>2007</span></h1>
+        </div>  
+        <div id='yearselection' class='yearselection'>
+            <h4>Wählen Sie ein Jahr</h4> 
+            <a href="index.html?year=2007"><button>2007</button></a></br>
+            <a href="index.html?year=2008"><button>2008</button></a></br>
+            <a href="index.html?year=2009"><button>2009</button></a></br>
+            <a href="index.html?year=2010"><button>2010</button></a></br>
+            <a href="index.html?year=2011"><button>2011</button></a></br>
+            <a href="index.html?year=2012"><button>2012</button></a></br>
+            <a href="index.html?year=2013"><button>2013</button></a></br>
+        </div>
+        <div id='schadstoffselection' class='schadstoffselection'>
+           <h4>Wählen Sie einen Schadstoff</h4>
+            <div id="selector">
+                <select id="schadstoffe"></select>
+            </div>
+        </div>
+        <div id='karte' class='karte'>
+            <svg id='svg' class='svg'>
+                <g id="main" class='main' style='font-size: 10px' ></g>
+            </svg>
+        </div> 
+        <div id='infotitle' class='infotitle'>
+        </div>
+        <div id="info" class='info'>
+            <ul></ul>
+        </div>
+        <p id='legende' class='legende'></p>
+    </div>	
+	<script>
+	   document.getElementById('year').innerHTML=getYear;
+	</script> 
+</body>

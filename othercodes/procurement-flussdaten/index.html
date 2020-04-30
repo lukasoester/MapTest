@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <script src="d3.min.js"></script>   
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <link href="https://bootswatch.com/superhero/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+        <style>
+                .container-fluid{background: lightblue; margin:0px auto; height: 90px;}
+                
+                .h1{
+                    font-family:'Courier New', Courier, monospace
+                }
+
+                .svg{max-width: 100%;}
+
+               
+            </style>
+    </head>
+    <body>
+
+        <div style="max-width: 1900px; margin: 0 auto; padding: 10px; ">
+            <div class="container-fluid">
+                 <div class="row">
+                     
+                 </div>  
+                
+                
+                
+                <div class="row" style="border: 5px solid black;">
+
+                            
+
+                            <div class="col-xs-6 col-sm-12">
+                                <div class="panel panel-primary"> 
+                                    <div class="panel-heading">
+                                        <h1 class="panel-title">Procurement Flussdaten</h1>
+                                        
+                                    </div> 
+                                    <div class="panel-body"> 
+                                        <p>Sankey-Diagramm</p>
+                                        
+                                        <form target="_self">
+                                                <label for="minNumber" >Min. number</label> <!--visible for screen readers only-->
+                                                <input type="text" id="minNumber" name="minNumber"  />
+                                                
+                                        </form>
+                                        
+                                        <svg viewBox="0 0 1440 720" width="1440" height="720" ></svg>
+                                    </div>
+                                    <div class="panel-footer">
+                                            
+                                            <div class="row">
+                                                <div class="col-md-4 col-md-offset 10px">
+                                                    <h1> Daten</h1>
+                                                    <p>Siemens AG</p>
+                                                    <p>Process Mining in Procurement</p>
+                                                </div>
+                                                <div class="col-md-4 col-md-offset 10px">
+                                                        <h1> Projekt</h1>
+                                                        <p>Open Data Uni Bern</p>
+                                                        <p>Denis Kohli</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-md-offset 10">
+                                                            <h1> Lizenz</h1>
+                                                            <p>BSD-3</p>
+                                                            <p></p>
+                                                        </div>
+                                            </div>
+                                          
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                
+            </div>
+        </div>
+        
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+   
+        <script src="https://unpkg.com/d3-sankey@0.6"></script>  
+        <script src="https://unpkg.com/d3-array@1"></script>
+        <script src="https://unpkg.com/d3-collection@1"></script>
+        <script src="https://unpkg.com/d3-path@1"></script>
+        <script src="https://unpkg.com/d3-shape@1"></script>
+        <script src="https://unpkg.com/d3-sankey@0"></script>  
+        
+        <script>
+  
+          // eventlistener to get minimum user's number of processes for filter
+            
+                document.getElementById("minNumber").addEventListener("change", function(){
+                    num = parseInt(document.getElementById("minNumber").value);
+                    
+                    window.name=num;
+                                      
+                }); 
+                  
+
+            d3.csv("Eventlog_Final.csv", function(data) {            
+                
+                //create readable timestamp
+                var time = d3.timeParse("%d.%m.%Y %H:%M"); 
+                
+                data.forEach(function(d,i){data[i]["time"]=time(data[i]["tStamp"].slice(0,19));
+                            });
+
+                //sort cases on time                
+                data.sort(function(x,y){
+                    return d3.ascending(x.caseID,y.caseID) || d3.ascending(x.time,y.time);
+                })
+                
+                
+                //combine similar events
+                data.forEach(function(d,i){
+                    if(   data[i]["event"].includes("Account Assignment Workflow ") 
+                      ){data[i]["event"] = "Account Assignment Workflow"
+                    }
+                    else if (data[i]["event"].includes("Accounting Approval Workflow")){
+                        data[i]["event"] = "Accounting Approval Workflow"
+                    }
+                    else if (data[i]["event"].includes("Goods Received Missing")){
+                        data[i]["event"] = "Goods Received Missing"
+                    }
+                    else if (data[i]["event"].includes("RWH Approval Workflow")){
+                        data[i]["event"] = "RWH Approval Workflow"
+                    }
+                    else if (data[i]["event"].includes("INQUIRY NEEDED")){
+                        data[i]["event"] = "INQUIRY NEEDED"
+                    }
+                    else if (data[i]["event"].includes("Vendor Workflow")){
+                        data[i]["event"] = "Vendor Workflow"
+                    }
+                    else if (data[i]["event"].includes("RW Approval Workflow location1")){
+                        data[i]["event"] = "RW Approval Workflow location1"
+                    }
+                    else if (data[i]["event"].includes("High-Risk-Payment Workflow")){
+                        data[i]["event"] = "High-Risk-Payment Workflow"
+                    }
+                    else if (data[i]["event"].includes("Info Workflow")){
+                        data[i]["event"] = "Info Workflow"
+                    }
+                    else if (data[i]["event"].includes("RW")){
+                        data[i]["event"] = "RW"
+                    }
+                    else if (data[i]["event"].includes("Vendor IN Payment ")){
+                        data[i]["event"] = "Vendor IN Payment "
+                    }
+                    else if (data[i]["event"] == "Purchase Order Item delivery date "){
+                        delete data[i];
+                    }
+                })
+                data = data.filter(function(e) {return e});
+                console.log(data);
+
+                //create array containing one node per event
+                function getUniqueValues(array, key) {
+                    var result = new Set();
+                    array.forEach(function(item) {
+                        if (item.hasOwnProperty(key)) {
+                            result.add(item[key]);
+                            //result.add(item["origin"]);
+                        }
+                    });
+                    return result;
+                }
+
+                uni = getUniqueValues(data, "event"); 
+                uni = Array.from(uni);
+
+                //define the nodes
+                var nodes = [];                       
+                for(i=0; i<uni.length; i++){
+                    //nodes[i] = {name : uni[i*2] , origin : uni[(i*2)+1] };
+                    nodes[i] = {name : uni[i] };
+                    
+                }
+                //console.log(nodes.length); 114 for event, 23 for origin
+                
+                //create array of links between two successive events of same case
+                var links = [];
+                for(i=0; i<data.length-1; i++){
+                    if(data[i]["caseID"] == data[i+1]["caseID"]){
+                    links[i] = {source : uni.indexOf(data[i]["event"]), target : uni.indexOf(data[i+1]["event"]), value : 1 }; 
+                    }
+                }            
+                
+                //count the number of links between all events and assign it as value to distinct links
+                var counts = {};
+                links.forEach(function(obj) { var key = JSON.stringify(obj); counts[key] = (counts[key] || 0)+1; });                
+                
+                var linkers = [];
+                var k = 0;
+                for(i=0; i<114; i++){
+                    for(j=0; j<114; j++){
+                        linkers[k] = {source : i, target : j, value : counts["{\"source\":"+i+",\"target\":"+j+",\"value\":1}"]};
+                        k += 1;
+                    }
+                }
+                
+                for(i=0; i<linkers.length; i++){
+                    if( linkers[i]["value"] === null || linkers[i]["value"] === undefined
+                    )  {delete linkers[i];}
+                }
+                
+                linkers = linkers.filter(function(e) {return e});
+                
+                //filter processes by minimum number
+                var minNumber = parseInt(window.name);
+                if(isNaN(minNumber)){minNumber=100;}
+                document.getElementById("minNumber").value = minNumber;
+                console.log(minNumber);
+                linkers = filterByNumber(minNumber, linkers);
+ 
+                linkers = linkers.filter(function(e) {return e});
+    
+                
+                //set reverse attribute for links going in wrong direction
+                for(i=0; i<linkers.length; i++){
+                    linkers[i]["reverse"] = false;
+                }
+                
+                //reverse links going in wrong direction
+                for(i=0; i<linkers.length; i++){
+                    if( linkers[i]["source"] > linkers[i]["target"]) {
+                        var a = linkers[i]["source"]; var b = linkers[i]["target"];
+                        linkers[i]["source"] = b; linkers[i]["target"] = a;
+                        linkers[i]["reverse"] = true;
+                    }
+                    else if( linkers[i]["source"] == linkers[i]["target"]) {
+                        delete linkers[i];
+                    }
+                };
+                linkers = linkers.filter(function(e) {return e});
+
+                //function for filtering nodes by min. number of processes
+                function filterByNumber(minSize, links){
+                    for(i=0; i<links.length; i++){
+                        if(links[i]["value"] < minSize){
+                            delete links[i];
+                        }
+                    }
+                    links = links.filter(function(e) {return e});
+                    
+                    return links;
+                }
+
+                //create array of objects readable for d3.sankey
+                var dataset = {"nodes": nodes, "links": linkers};
+                console.log(dataset);
+
+               
+                //sankey diagram from https://bl.ocks.org/mbostock/ca9a0bb7ba204d12974bca90acc507c0 
+                var svg = d3.select("svg"),
+                width = +svg.attr("width"),
+                height = +svg.attr("height");
+                
+
+                var formatNumber = d3.format(",.0f"),
+                    format = function(d) { return formatNumber(d) + " processes"; },
+                    color = d3.scaleOrdinal(d3.schemeCategory10);
+                
+                var sankey = d3.sankey()
+                    .nodeWidth(15)
+                    .nodePadding(10)
+                    .extent([[1, 1], [width - 1, height - 6]]);
+                
+                var link = svg.append("g")
+                    .attr("class", "links")
+                    .attr("fill", "none")
+                    .attr("stroke", "#000")
+                    .attr("stroke-opacity", 0.2) //.attr("x0", function(d) {return 0;})
+                     .selectAll("path");
+                
+                var node = svg.append("g")
+                    .attr("class", "nodes")
+                    .attr("font-family", "sans-serif")
+                    .attr("font-size", 10)
+                    .selectAll("g");
+                   
+                sankey(dataset);
+               
+                link = link
+                    .data(dataset.links)
+                    .enter().append("path")
+                   // .attr("d", function(d) { d.y0 = 0;  d.y1 = 10;})
+                    .attr("d", d3.sankeyLinkHorizontal())
+                    .attr("stroke-width", function(d) { return Math.max(1, d.width); })
+                    .attr("stroke", function(d) {if (d.reverse == true)
+                        {return "red";} 
+                        else {return "blue";}})
+                    .sort(function(a,b) {return b.dy-a.dy;})   /***/  
+                    .on("mouseenter", function() { d3.select(this).style("stroke-opacity", 1.0);})
+                    .on("mouseleave", function() { d3.select(this).style("stroke-opacity", 0.2);});
+                
+                link.append("title")
+                    .text(function(d) { 
+                            if(d.reverse === false) {return "source: "+ d.source.name + "\n" + "target: "+d.target.name  + "\n" + format(d.value); }
+                            else {return "source: "+ d.target.name + "\n" + "target: "+d.source.name  + "\n" + format(d.value);}
+                            
+                    });
+                
+                node = node
+                    .data(dataset.nodes)                                    
+                    .enter().append("g");
+        
+                node.append("rect")
+                    .attr("x", function(d) {  return d.x0; }) //****//
+                    .attr("y", function(d) { return d.y0; })
+                    .attr("height", function(d) { return d.y1 - d.y0; })
+                    .attr("width", function(d) { return d.x1 - d.x0; })
+                    .attr("fill", function(d) { return color(d.name.replace(/ .*/, "")); })
+                    .attr("stroke", "#000");
+                
+             /*   node.append("text")
+                    .attr("x", function(d) { return d.x0 - 1; })
+                    .attr("y", function(d) { return d.y0 - 2 ; })
+                    .attr("dy", "0.35em")
+                    .attr("text-anchor", "end")
+                    .text(function(d) { 
+                        if(d.value > 0) {return d.name; }})
+                    .filter(function(d) { return d.x0 < width / 2; })
+                    .attr("x", function(d) { return d.x1 + 6; })
+                    .attr("text-anchor", "start");*/
+                
+                node.append("title")
+                    .text(function(d) { return d.name + "\n" + format(d.value); });
+
+                    
+                });            
+
+        </script>
+
+    </body>
+</html>

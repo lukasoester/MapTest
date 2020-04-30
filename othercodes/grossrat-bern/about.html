@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Grosser Rat Kanton Bern</title>
+
+    <!-- STYLES -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- FONT FOR iOS -->
+    <link href="css" rel="stylesheet">
+
+    <!-- STYLE FOR ANIMATED MENU ICON BARS-->
+    <link rel="stylesheet" href="navbar_animated.css">
+
+    <style>
+        /* PAGE STYLE */
+        .container-fluid {
+            font-family: 'Arial';
+        }
+        .navbar-default {
+            font-family: 'Arial';
+            background-color: #FF0000;
+        }
+        .content {
+            font-family: 'Arial';
+        }
+        .container {
+            margin: 0;
+        }
+        .dl-horizontal {
+            padding: 10px;
+            background-color: lightgrey;
+        }
+        p {
+            font-family: "Arial";  
+            font-size: 19px;
+        }
+        body {
+            margin-top: 65px;
+        }
+        /* SANKEY STYLE */
+        .node rect {
+            cursor: move;
+            fill-opacity: .9;
+            shape-rendering: crispEdges;
+        }
+
+        .node text {
+            pointer-events: none;
+            font-family: "Arial";
+            font-size: 21px;
+        }
+
+        .link {
+            fill: none;
+            stroke: #000;
+            stroke-opacity: .3;
+        }
+
+        .link:hover {
+            stroke-opacity: .5;
+        }
+    </style>
+    <script src="d3.min.js"></script>
+    <script src="sankey.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </head>
+
+
+    <body>
+
+        <!-- NAVIGATION -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+
+                    <!-- RESPONSIVE NAVIGATION -->
+                    <div class="hidden-xs">
+                        <a class="navbar-brand" href="index.html" style="color:black">Grosser Rat Kanton Bern</a>
+                    </div>
+                    <div class="visible-xs">
+                        <a class="navbar-brand" href="index.html">
+                            <font color="black">Grosser Rat Kanton Bern</font>
+                            <font color="white">Visualisierung</font>
+                        </a>
+                    </div>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navdropdown">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navdropdown">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Visualisierung</a></li>
+                        <li class="active"><a href="about.html">Über</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- CONTENT -->
+        <div class="content" style="max-width: 1200px; margin: 0 auto; padding-left: 15px; padding-right: 15px;">
+            <div class="col-md-12 col-sm-12 col-xs-12 content">
+                <div class="panel panel-default">
+                    <div class="panel-body"><h3> Über</h3>
+                        <p>Diese Visualisierung stellt die Resultate der Abstimmungen der Juni- und der Septembersession dar. <br>
+                            Die Visualisierungen wurden im Rahmen der Open Data Vorlesung 2018 erstellt. <br>
+                        </p></div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body"><h3>Daten</h3>
+                        <p> <a href="Rohdaten.zip">Hier</a> sind die Rohdaten, die ich für die Visualisierung verwendet habe. Die Daten stammen direkt von den Parlamentsdiensten des Grossen Rates.</p></div>
+                </div>
+
+
+
+            </div>
+
+
+            </body>
+        </html>

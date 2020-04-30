@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Das Holzflussmodell</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <h1 class="text-dark">Das Holzflussmodell</h1> 
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+    <li class="nav-item active">
+        <a class="nav-link" href="index.html"><i class="fas fa-tree"></i> Das Modell</a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index2.html"><i class="fas fa-info"></i> Dokumentation</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index3.html"><i class="fas fa-user-friends"></i> Die Macher</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index4.html"> <i class="fas fa-link"></i> Quellen</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+
+
+    
+    
+<div class="container">
+    <h1 class="text-center" style="margin-top: 30px; margin-bottom: 40px;">Das Holzflussmodell der Schweiz 2017</h1>
+    <p>Die Daten unserer Visualisierung zeigen die Holzbilanz der Schweiz von der Urproduktion bis zum Endverbrauch. Die natürliche Ressource Holz durchläuft im Prozess zwischen dem schlagen im Wald bis zu den Endprodukten wie Energieholz, Produkte aus Massivholz und Holzwerkstoffen oder auch Papier und Karton verschiedene Be- und Verarbeitungs- sowie Handelsstufen. Dazu kommen Ressourcenflüsse aus dem und in das Ausland sowie Zuflüsse aus den Recycling-Prozessen von hochwertigeren Produktionsprozessen.
+    Die genannten Flüsse werden in einem sogenannten Holzflussmodell dargestellt, um den Fluss des Holzes darzustellen. Aus diesem Modell können verschiedene Beobachtungen gezogen werden. Wie zum Beispiel, wie viel Holz geht während des Produktionsprozesses verloren? Aber auch wie effizient wird das Holz verwertet bzw. was kann überhaupt verwertet werden?
+    Aus der Rohstoffbilanz 2017 der Schweiz kann errechnet werden, dass gerade einmal etwa 50% des Rohholz (Waldholz, Flurholz und Restholz aus der Verarbeitung) und von weiterem Holze basierten Rohstoffen wie Altholz und Altpapier aus den Wäldern der Schweiz stammt.
+    Die Darstellung des Holflusses zeigt auch wie die Holzressourcen auf der ersten Stufe fliessen. 58% des Rundholzes fliesst in die energetische Produktion, es wird also einfach verbrannt. Aus knapp einen Viertel des Rundholzes wird Papier oder Platten hergestellt. Was erstaunt, nur gerade 13% fliessen in die Produktion von Produkten aus Massivholz. 
+    Die Holzbilanz zeigt also verschiedene wichtige Aspekte der Verwendung der Ressource Holz in der Schweiz, so ist doch die Abhängigkeit der Schweiz von der Holzproduktion des Auslands und von Recycling Produkten deutlich aus den Daten herauszulesen. 
+    Diese Abhängigkeit wird in unserer Visualisierung verdeutlicht.
+    </p>
+    
+    <h4>
+    Wichtig für die Interpretation: Phasenübergänge von einem zum anderen Diagramm sind daran zu erkennen, dass der Output auf einem Diagramm die gleiche Farbe auf dem äusseren Ring aufweist, wie der Input auf dem folgenden Diagramm(braun, hellbraun)
+        .
+    </h4>
+    
+        </div>
+ 
+<h1 class="text" style="margin-top: 60px; margin-bottom: 30px; margin-left: 430px;"><i class="fas fa-chart-pie"></i> Visualisierung</h1>
+    
+ <!--Die Buttons kann man mit dem CSS noch besser positionieren-->
+ <div class="container" style="margin-left: 330px;" "margin-top: 100px;">
+     <input type="button" onclick="content4()" value="Gesamtübersicht" class="btn btn-info"></input>
+   <input type="button" onclick="content1()" value="Erste Phase" class="btn btn-danger"></input>
+  <input type="button" onclick="content2()" value="Zweite Phase" class="btn btn-primary"></input>
+  <input type="button" onclick="content3()" value="Dritte Phase" class="btn btn-success"></input>
+</div>
+
+<script>
+	function content1() {document.getElementById('screen')
+	.src = "Diagramm1.html"; } 
+	
+	function content2() {document.getElementById('screen')
+	.src = "Diagramm2.html"; } 
+	
+	function content3() {document.getElementById('screen')
+	.src = "Diagramm3.html"; } 
+  
+    
+    function content4(){document.getElementById('screen')
+	.src = "gesamtdiagramm.html"; } 
+</script>
+
+  <div class="container" style= "position:relative;" "margin-left: 500px; ">
+    <iframe
+   src="gesamtdiagramm.html"
+   id="screen"
+   seamless 
+   width="800" 
+   height="850" 
+   scrolling="no"
+   name="SELFHTML_in_a_box" seamless
+    frameborder="0">
+ </iframe>
+      
+</div>
+
+<br>
+
+<div class="container" style="margin-left: 80px;">
+<h3 class="text-center"><i class="fas fa-tools"></i> Hilfsmittel und Übersicht</h3>
+<br>
+<img class="mx-auto d-block rounded" src="hilfe.jpg" width="55%" height="55%">
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <h6 class="text-white" style="margin-top: 70px;">
+   
+        Diese Seite ist im Kurs Open Data an der Universität Bern entstanden. 
+                    <p> Diese Applikation wurde in Zusammenarbeit mit den Holzdaten des Bundesamt für Umwelt erstellt.</p>
+                    <p> Autoren: Simon Fries, Mario Limacher </p></h6>
+    <br>
+    <a role="button" class="btn btn-warning" href="https://www.bafu.admin.ch"> <i class="fas fa-tree"></i> Bundesamt für Umwelt (BAFU)</a>
+    <a role="button" class="btn btn-danger" href="https://www.iwi.unibe.ch"> <i class="fas fa-university"> </i> Institut für Wirtschaftsinformatik UniBe (IWI)</a>                                                                                                                      
+</div>
+</body>

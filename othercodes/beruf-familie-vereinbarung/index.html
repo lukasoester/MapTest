@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de-CH">
+<head>
+	<title>Vereinbarung Beruf-Familie in Schweizer Kantonen</title>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+	<meta name="description" content="Vereinbarung Beruf-Familie in Schweizer Kantonen" />
+	<meta name="keywords" content="Vereinbarung Beruf-Familie in Schweizer Kantonen, Open Data Visualisation: Map of Switzerland, d3, map, json, csv" />
+	<meta name="robots" content="index, follow" />
+	<meta property="og:site_name" content="Vereinbarung Beruf-Familie in Schweizer Kantonen" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="./lib/css/stylesheet.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="./lib/css/styles.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="./lib/css/colorbrewer.css" media="screen" />
+    <style>
+		#main_svg {
+            width: 100%/*727px*/;
+            height: 510px;
+        }
+        
+		.containers {
+			height: 264px;
+		}
+		
+        #info ul {
+            /*display: none;*/
+            /*position: absolute;
+            top: 5px;
+            left: 5px;
+            z-index: 2;*/
+            background-color: yellow;
+            /*box-shadow: grey 0px 0px 5px 5px;*/
+            /*color: black;*/
+            /*font-size: 10pt;*/
+            /*padding-right: 12px;*/
+			list-style-type: none;
+			margin: 0;
+			/*padding: 0;*/
+        }
+		
+        div.ttip {
+            position: absolute;
+            padding: .5em;
+            background: #fff;
+            border-radius: 2px;
+            color: #222;
+            text-shadow: #f5f5f5 0 1px 0;
+            box-shadow: 0px 0px 2px 0px #a6a6a6;
+            opacity: 0.9;
+            top: 0;
+            left: 0;
+        }
+		#menu .group1 { background-color: #FEE0D2;}
+		#menu .group2 { background-color: #FEE08B;}
+		#menu .group3 { background-color: #C7E9B4 ;}
+		#menu .group4 { background-color: #7FCDBB;}
+		#menu .group5 { background-color: darkred;}
+		#menu .group6 { background-color: lightblue;}
+		#menu .group7 { background-color: lightgreen;}
+		
+		/*.output_panels { background-color: yellow;}*/
+		/*.info_panels { background-color: lightgreen;}*/
+    </style>
+</head>
+<body>
+    <script src="./lib/js/d3.v3.min.js"></script>
+    <script src="./lib/js/topojson.v1.min.js"></script>
+    <script src="./lib/js/queue.v1.min.js"></script>
+	<script src="./lib/js/d3.tip.v0.6.3.js"></script>
+<div id="header">
+	<p></p>
+	<h1>Vereinbarung Beruf-Familie in Schweizer Kantonen</h1>
+	<h2><img src="./img/Schweiz.svg"/>Open Data Visualisierung Projekt</h2>
+	<ul>
+		<li><a href="./index.html" class="active">Startseite</a></li>
+		<li><a href="./beschreibung.html">Beschreibung</a></li>
+	</ul>
+	<div id="layoutdims">
+		<ul>
+			<li><a id="help_button" onclick="d3.select('#help_menu').style('display','block');">?</a></li>
+		</ul>
+	</div>
+</div>
+<div class="colmask leftmenu">
+	<div class="colleft">
+		<div class="col1">
+			<!-- Column 1 start -->
+			<svg id="main_svg">
+            </svg>
+			<!-- Column 1 end -->
+		</div>
+		<div class="col2">
+			<!-- Column 2 start -->
+			<h3>Vergleichskriterien:</h3>
+			<p>
+				<form>
+					<select id="menu" onchange='{
+						s_selectedcolumn = this.value;
+						s_selectedid = this.selectedIndex;
+						s_selectedtype = this.selectedOptions[0].id;
+						var q = queue();
+						q.defer(updateMap);
+						q.await(drawMap);
+					}'>
+						<option class="group1" id="item_1a" value="IN" title="Anzahl an bewilligter Gesuche für die Finanzierung von Kinderbetreuungsinstitutionen (Kindertagesstätte, Einrichtungen für die schulergänzende Betreuung und Strukturen für die Koordination der Betreuung in Tagesfamilien)." selected="true">Anzahl bewilligter Gesuche für Finanzierung von Institutionen</option>
+						<option class="group1" id="item_1b" value="IN_Betrag" title="Betrag der bewilligten Gesuche für die Finanzierung von Kinderbetreuungsinstitutionen (Kindertagesstätte, Einrichtungen für die schulergänzende Betreuung und Strukturen für die Koordination der Betreuung in Tagesfamilien)">Gelder für bewilligte Gesuche für Finanzierung von Institutionen (in CHF)</option>
+						<option class="group2" id="item_2" value="Q_Total" title="Existenz und Regelmässigkeit der statistischen Berichterstattung über das Angebot und die Nachfrage von Kinderbetreuungsinstitutionen – nach Themen. Alle Statistiken verweisen auf Kinder im Vorschulalter.">Datenverfügbarkeit: Häufigkeit der Statistikführung</option>
+						<option class="group3" id="item_3a" value="EQ_TOTAL" title="Prozentuale Höhe der Erwerbsbeteiligten zwischen 15 und 64-jährigen ">Arbeitsmarktvergleich: Erwerbsquoten</option>
+						<option class="group3" id="item_3b" value="TZ_TOTAL" title="Prozentualer Anteil der Teilzeiterwerbstätigen  zwischen 15 und 64-jährige">Arbeitsmarktvergleich: Teilzeitarbeit</option>
+						<option class="group4" id="item_4" value="Gesamt_Kanton" title="Einfügung von Zielen über die Vereinbarkeit von Beruf und Familie in der kantonalen Verfassung oder Gesetzen und/oder als Strategie der Regierung">Verankerung der Policy über Vereinbarkeit</option>
+						<!--<option id="group5" id="item_5" value="HH_PoK">Charakteristiken der Haushalte</option>-->
+					</select>
+				</form>
+			</p>
+			<div class="containers" id="description_container" style="opacity:0">
+				<h3 id="description_title">Beschreibung des Vergleichskriteriums:</h3>
+				<!--<p class="info_panels" id="description_panel">
+				</p>-->
+				<div class="info_panels" id="info_panel_1" style="height:75px;">
+				   
+				</div>
+				<div class="output_panels" id="info_panel_2">
+					<svg>
+					</svg>
+				</div>
+			</div>
+			<div class="containers" id="clicks_container" style="opacity:0">
+				</hr>
+				<h3 id="clicks_title">Daten für den angeklickten Kanton:</h3>
+				<div class="info_panels" id="clicks_panel_1" style="height:75px;">
+				   
+				</div>
+				<div class="output_panels" id="clicks_panel_2">
+					<svg>
+					</svg>
+				</div>
+			</div>
+			<!-- Column 2 end -->
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<div class="info_panels" id="links_panel">
+	<ul>
+	</ul>
+	</div>
+	<p>Copyright © 2015, O.A.</p>
+</div>
+    <script src="./lib/js/script.js"></script>
+<div id="help_menu" class="help_panel">
+	<a class="close" onclick="d3.select('#help_menu').style('display','none');">×</a>
+	<h2>Informationen</h2>
+	<h3>Bedienungsanleitung</h3>
+	Folgende Funktionalitäten sind gegeben:
+		<ul>
+			<li>
+				<span style="font-style:italic;">Mouse-Over:</span> Es werden die Daten zur im Menü gewählten Kriterium werden für den entsprechenden Kanton gezeigt.
+			</li>
+			<li>
+				<span style="font-style:italic;">Mouse-Click:</span> Die Daten zur im Menü gewählten Kriterium für den entschprechende Kanton werden in der Zwischenablage unten links gespeichert, um Vergleiche zwischen den Kantonen oder Kriterien zu ermöglichen.<br/>Bestehende Daten in der Zwischenablage werden ersetzt.
+			</li>
+			<li>
+				<span style="font-style:italic;">Mouse-Doppelcklick:</span> Daten werden aus der Zwischenablage gelöscht.
+			</li>
+		</ul>
+	<h3>Quellen Tabelle</h3>
+	<table style="width:100%">
+		<tr class="table_title">
+			<td>Variable</td>
+			<td>Quelle</td>	
+		</tr>
+		<tr>
+			<td>Anzahl bewilligter Gesuche für Finanzierung von Institutionen</td>
+			<td><a href="http://www.bsv.admin.ch/praxis/kinderbetreuung/00112/index.html?lang=de">Bundesamt für Sozialversicherung</a></td>
+		</tr>
+		<tr>
+			<td>Gelder für bewilligte Gesuche für Finanzierung von Institutionen (in chf)</td>
+			<td><a href="http://www.bsv.admin.ch/praxis/kinderbetreuung/00112/index.html?lang=de">Bundesamt für Sozialversicherung</a></td>
+		</tr>
+		<tr>
+			<td>Datenverfügbarkeit: Häufigkeit der Statistikführung</td>	
+			<td><a href="http://www.berufundfamilie.admin.ch/informationsplattform/index.html?subthemen%5b%5d=65&subthemen%5b%5d=66&subthemen%5b%5d=67&subthemen%5b%5d=68&subthemen%5b%5d=69&subthemen%5b%5d=70&subthemen%5b%5d=71&abfragestart=abfrage+starten&v=0%7c1&g%5b%5d=29%7c&g%5b%5d=31%7c&g%5b%5d=33%7c&g%5b%5d=13%7c&g%5b%5d=35%7c&g%5b%5d=37%7c&g%5b%5d=24%7c&g%5b%5d=25%7c&g%5b%5d=39%7c&g%5b%5d=41%7c&g%5b%5d=43%7c&g%5b%5d=45%7c&g%5b%5d=47%7c&g%5b%5d=49%7c&g%5b%5d=51%7c&g%5b%5d=53%7c&g%5b%5d=55%7c&g%5b%5d=58%7c&g%5b%5d=60%7c&g%5b%5d=65%7c&g%5b%5d=63%7c&g%5b%5d=23%7c&g%5b%5d=67%7c&g%5b%5d=69%7c&g%5b%5d=71%7c&g%5b%5d=16%7c&b=2&t%5b%5d=39&e=1&lang=de">BVS und SECO: Infoplattform zur Vereinbarkeit von Beruf und Familie</a></td>
+		</tr>
+		<tr>
+			<td>Arbeitsmarkt: Erwerbsquoten und Teilzeitarbeit</td>	
+			<td><a href="http://www.berufundfamilie.admin.ch/informationsplattform/index.html?subthemen%5b%5d=90&subthemen%5b%5d=91&v=0%7c1&g%5b%5d=29%7c&g%5b%5d=31%7c&g%5b%5d=33%7c&g%5b%5d=13%7c&g%5b%5d=35%7c&g%5b%5d=37%7c&g%5b%5d=24%7c&g%5b%5d=25%7c&g%5b%5d=39%7c&g%5b%5d=41%7c&g%5b%5d=43%7c&g%5b%5d=45%7c&g%5b%5d=47%7c&g%5b%5d=49%7c&g%5b%5d=51%7c&g%5b%5d=53%7c&g%5b%5d=55%7c&g%5b%5d=58%7c&g%5b%5d=60%7c&g%5b%5d=65%7c&g%5b%5d=63%7c&g%5b%5d=23%7c&g%5b%5d=67%7c&g%5b%5d=69%7c&g%5b%5d=71%7c&g%5b%5d=16%7c&b=3&t%5b%5d=89&e=&lang=de">BVS und SECO: Infoplattform zur Vereinbarkeit von Beruf und Familie</a></td>
+		</tr>
+		<tr>
+			<td>Verankerung der Policy über Vereinbarkeit</td>	
+			<td><a href="http://www.berufundfamilie.admin.ch/informationsplattform/index.html?subthemen%5b%5d=119&subthemen%5b%5d=120&v=0%7c1&g%5b%5d=29%7c&g%5b%5d=31%7c&g%5b%5d=33%7c&g%5b%5d=13%7c&g%5b%5d=35%7c&g%5b%5d=37%7c&g%5b%5d=24%7c&g%5b%5d=25%7c&g%5b%5d=39%7c&g%5b%5d=41%7c&g%5b%5d=43%7c&g%5b%5d=45%7c&g%5b%5d=47%7c&g%5b%5d=49%7c&g%5b%5d=51%7c&g%5b%5d=53%7c&g%5b%5d=55%7c&g%5b%5d=58%7c&g%5b%5d=60%7c&g%5b%5d=65%7c&g%5b%5d=63%7c&g%5b%5d=23%7c&g%5b%5d=67%7c&g%5b%5d=69%7c&g%5b%5d=71%7c&g%5b%5d=16%7c&b=1&t%5b%5d=121&e=&lang=de">BVS und SECO: Infoplattform zur Vereinbarkeit von Beruf und Familie</a></td>
+		</tr>
+		<tr>
+			<td>Daten über die Behörden</td>		
+			<td><a href="http://www.bsv.admin.ch/praxis/kinderbetreuung/00113/01240/index.html?lang=de">Bundesamt für Sozialversicherung</a></td>
+		</tr>
+	</table>
+	<br/>
+	<h3>Autoren</h3>
+	<ul style="list-style-type:none; padding:0; margin:0;">
+		<li>
+			<ul>
+				<h4 style="list-style-type:none; padding:0; margin:0;">O. A.</h4>
+				<li>Hauptfach: BS in Bussines Management</li>
+				<li>Nebenfach: Informatik</li>
+				<li><a href="mailto:">Email: #</a></li>
+			</ul>
+		</li>
+		<br/>
+		<li>
+			<ul>
+				<h4 style="list-style-type:none; padding:0; margin:0;">Nicoletta Lumaldo</h4>
+				<li>Hauptfach: MA in Public Management</li>
+				<li>Nebenfach: Management and Evaluation of Public Policies</li>
+				<li><a href="mailto:nicoletta.lumaldo@students.unibe.ch">Email: nicoletta.lumaldo@students.unibe.ch</a></li>
+			</ul>
+		</li>
+	</ul>
+	<h3>Source Code und Downloads</h3>
+	<p>
+		Diese App viesualisiert Daten aus den folgenden CSV-Dateien:
+	</p>
+	<ul>
+		<li><a href="./data/csv/full_xlsx" download>Alle Daten zusammengefasst - data.csv</a>
+		<li><a href="./data/csv/codes.csv" download>Codebuch der Variablenname und Beschreinungen - codes.csv</a>
+	</ul>
+</div>
+</body>
+</html>

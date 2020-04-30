@@ -1,0 +1,10 @@
+{
+"title": "Grossrat Bern",
+"description": "Die Ursprüngliche Frage, welche mich dazu bewegte diese Visualisierung zu erstellen war: Was macht einen Vorstoss im Grossen Rat erfolgreich? Gibt es Parteien die erfolgreicher sind als andere? Spielt das Geschlecht eine Rolle? Gibt es ein Stadt-Land Gefälle? Oder ist es am Ende nur das Alter, welches den Erfolg bestimmt? Diese Darstellung soll ein wenig Licht auf diese Fragestellungen werfen. Die Linke Spalte beschreibt das Thema des Vorstosses, die Direktion. In der Mittleren Spalte steht je nach Auswahl die Partei, das Geschlecht, die Region oder das Alter(Stand 25.05.2018) der Grossräte. In der letzten Spalte schlieslich die Ergebnisse der Abstimmungen.Um genaue Informationen zu Erhalten, zum Beispiel die genaue Anzahl der Vorstösse oder der Anteil an allen Vorstössen, einfach mit der Maus über die gewünschte Stelle fahren.",
+"authors": [
+    {"name": "Renato Schär", "email": "renato.schaer@gmail.com"}
+],
+"date": "2018-05-30",
+"category": "society",
+"software_license": "Creative Commons"
+}

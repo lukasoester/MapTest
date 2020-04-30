@@ -1,0 +1,435 @@
+{
+"nodes":[
+ {
+   "node": 0,
+   "name": "Holzernte Schweiz",
+   "color": "#3f332f"
+ },
+ {
+   "node": 1,
+   "name": "Import",
+   "color": "#ffbf00"
+ },
+ {
+   "node": 2,
+   "name": "Altholz",
+   "color": "#87a96b"
+ },
+ {
+   "node": 3,
+   "name": "Altpapier",
+   "color": "#87a96b"
+ },
+ {
+   "node": 4,
+   "name": "Flurholz",
+   "color": "#480607"
+ },
+ {
+   "node": 5,
+   "name": "Holzkohle",
+   "color": "#480607"
+ },
+ {
+   "node": 6,
+   "name": "Energieholz inkl. Rinde",
+   "color": "#d90000"
+ },
+ {
+   "node": 7,
+   "name": "Stammholz",
+   "color": "#57421d"
+ },
+ {
+   "node": 8,
+   "name": "Industrieholz",
+   "color": "#5a6773"
+ },
+ {
+   "node": 9,
+   "name": "Industrieholz für Weiterverarbeitung",
+   "color": "#63717e"
+ },
+ {
+   "node": 10,
+   "name": "Schnittwaren, Furniere & Sperrholz",
+   "color": "#664d22"
+ },
+ {
+   "node": 11,
+   "name": "Span- & Faserplatten",
+   "color": "#9f8170"
+ },
+ {
+   "node": 12,
+   "name": "Holzschliff & Zellulose",
+   "color": "#6c7b89"
+ },
+ {
+   "node": 13,
+   "name": "Halbfabrikate",
+   "color": "#755827"
+ },
+ {
+   "node": 14,
+   "name": "Energieholz",
+   "color": "#ec0000"
+ },
+ {
+   "node": 15,
+   "name": "Produkte aus Massivholz & Holzwerkstoffen",
+   "color": "#84632c"
+ },
+ {
+   "node": 16,
+   "name": "Papier & Karton",
+   "color": "#768593"
+ },
+ {
+   "node": 17,
+   "name": "Gesamtverbrauch",
+   "color": "#56453f"
+ },
+ {
+   "node": 18,
+   "name": "Export",
+   "color": "#9966cc"
+ },
+ {
+   "node": 19,
+   "name": "Andere Verwendung & Verluste",
+   "color": "#007fff"
+ }
+],
+  "links":[
+ {
+   "source": 0,
+   "target": 6,
+   "value": 2402,
+   "color": "#ff4500"
+ },
+ {
+   "source": 0,
+   "target": 7,
+   "value": 2459,
+   "color": "#9b4d16"
+ },
+ {
+   "source": 0,
+   "target": 8,
+   "value": 500,
+   "color": "#8d9aa6"
+ },
+ {
+   "source": 1,
+   "target": 6,
+   "value": 30,
+   "color": "#ffbf00"
+ },
+ {
+   "source": 1,
+   "target": 7,
+   "value": 101,
+   "color": "#ffbf00"
+ },
+ {
+   "source": 1,
+   "target": 8,
+   "value": 88,
+   "color": "#ffbf00"
+ },
+ {
+   "source": 1,
+   "target": 9,
+   "value": 471,
+   "color": "#ffbf00"
+ },
+ {
+   "source": 1,
+   "target": 10,
+   "value": 593,
+   "color": "#ffbf00"
+ },
+ {
+   "source": 1,
+   "target": 11,
+   "value": 435,
+   "color": "#ffbf00"
+ },
+ {
+   "source": 1,
+   "target": 12,
+   "value": 219,
+   "color": "#ffbf00"
+ },
+ {
+   "source": 1,
+   "target": 15,
+   "value": 1378,
+   "color": "#ffbf00"
+ },
+ {
+   "source": 1,
+   "target": 16,
+   "value": 2273,
+   "color": "#ffbf00"
+ },
+ {
+   "source": 2,
+   "target": 14,
+   "value": 1749,
+   "color": "#ff4500"
+ },
+ {
+   "source": 3,
+   "target": 14,
+   "value": 567,
+   "color": "#ff4500"
+ },
+ {
+   "source": 3,
+   "target": 16,
+   "value": 1260,
+   "color": "#7cfc00"
+ },
+ {
+   "source": 4,
+   "target": 14,
+   "value": 310,
+   "color": "#ff4500"
+ },
+ {
+   "source": 5,
+   "target": 14,
+   "value": 23,
+   "color": "#ff4500"
+ },
+ {
+   "source": 6,
+   "target": 14,
+   "value": 2222,
+   "color": "#ff4500"
+ },
+ {
+   "source": 6,
+   "target": 18,
+   "value": 82,
+   "color": "#9966cc"
+ },
+ {
+   "source": 6,
+   "target": 19,
+   "value": 128,
+   "color": "#007fff"
+ },
+ {
+   "source": 7,
+   "target": 8,
+   "value": 320,
+   "color": "#7cfc00"
+ },
+ {
+   "source": 7,
+   "target": 10,
+   "value": 1165,
+   "color": "#9b4d16"
+ },
+ {
+   "source": 7,
+   "target": 14,
+   "value": 400,
+   "color": "#ff4500"
+ },
+ {
+   "source": 7,
+   "target": 15,
+   "value": 103,
+   "color": "#9b4d16"
+ },
+ {
+   "source": 7,
+   "target": 18,
+   "value": 490,
+   "color": "#9966cc"
+ },
+ {
+   "source": 7,
+   "target": 19,
+   "value": 82,
+   "color": "#007fff"
+ },
+ {
+   "source": 8,
+   "target": 9,
+   "value": 792,
+   "color": "#8d9aa6"
+ },
+ {
+   "source": 8,
+   "target": 14,
+   "value": 423,
+   "color": "#ff4500"
+ },
+ {
+   "source": 8,
+   "target": 18,
+   "value": 69,
+   "color": "#9966cc"
+ },
+ {
+   "source": 9,
+   "target": 8,
+   "value": 47,
+   "color": "#7cfc00"
+ },
+ {
+   "source": 9,
+   "target": 11,
+   "value": 668,
+   "color": "#8d9aa6"
+ },
+ {
+   "source": 9,
+   "target": 12,
+   "value": 227,
+   "color": "#8d9aa6"
+ },
+ {
+   "source": 9,
+   "target": 14,
+   "value": 178,
+   "color": "#ff4500"
+ },
+ {
+   "source": 9,
+   "target": 14,
+   "value": 40,
+   "color": "#ff4500"
+ },
+ {
+   "source": 9,
+   "target": 18,
+   "value": 90,
+   "color": "#9966cc"
+ },
+ {
+   "source": 9,
+   "target": 19,
+   "value": 12,
+   "color": "#007fff"
+ },
+ {
+   "source": 9,
+   "target": 19,
+   "value": 1,
+   "color": "#007fff"
+ },
+ {
+   "source": 10,
+   "target": 13,
+   "value": 1544,
+   "color": "#9b4d16"
+ },
+ {
+   "source": 10,
+   "target": 18,
+   "value": 214,
+   "color": "#9966cc"
+ },
+ {
+   "source": 11,
+   "target": 13,
+   "value": 512,
+   "color": "#8d9aa6"
+ },
+ {
+   "source": 11,
+   "target": 18,
+   "value": 591,
+   "color": "#9966cc"
+ },
+ {
+   "source": 12,
+   "target": 14,
+   "value": 9,
+   "color": "#ff4500"
+ },
+ {
+   "source": 12,
+   "target": 16,
+   "value": 373,
+   "color": "#8d9aa6"
+ },
+ {
+   "source": 12,
+   "target": 18,
+   "value": 1,
+   "color": "#9966cc"
+ },
+ {
+   "source": 12,
+   "target": 19,
+   "value": 63,
+   "color": "#007fff"
+ },
+ {
+   "source": 13,
+   "target": 8,
+   "value": 329,
+   "color": "#7cfc00"
+ },
+ {
+   "source": 13,
+   "target": 14,
+   "value": 267,
+   "color": "#ff4500"
+ },
+ {
+   "source": 13,
+   "target": 15,
+   "value": 1439,
+   "color": "#9b4d16"
+ },
+ {
+   "source": 13,
+   "target": 19,
+   "value": 21,
+   "color": "#007fff"
+ },
+ {
+   "source": 14,
+   "target": 17,
+   "value": 5473,
+   "color": "#ff4500"
+ },
+ {
+   "source": 14,
+   "target": 18,
+   "value": 715,
+   "color": "#9966cc"
+ },
+ {
+   "source": 15,
+   "target": 17,
+   "value": 2713,
+   "color": "#9b4d16"
+ },
+ {
+   "source": 15,
+   "target": 18,
+   "value": 207,
+   "color": "#9966cc"
+ },
+ {
+   "source": 16,
+   "target": 17,
+   "value": 2105,
+   "color": "#8d9aa6"
+ },
+ {
+   "source": 16,
+   "target": 18,
+   "value": 1801,
+   "color": "#9966cc"
+ }
+]}

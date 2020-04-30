@@ -1,0 +1,11 @@
+﻿{
+"title": "Procurement Flussdaten",
+"description": "Daten von Einkaufsprozessen der Siemens AG. Darstellung als Sankey-Diagramm zur Visualisierung von möglichen Problemstellen in Prozessabläufen und möglichen Ansätzen zur Effizienzsteigerung.",
+"authors": [
+    {"name": "Denis Kohli", "email": "denis.kohli@students.unibe.ch"}
+    
+],
+"date": "2018-05-30",
+"category": "finances",
+"software_license": "BSD-3"
+}

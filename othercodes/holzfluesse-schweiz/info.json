@@ -1,0 +1,12 @@
+{
+"title": "Holzflüsse in der Schweiz ",
+"description": "Die Daten unserer Visualisierung zeigen die Holzbilanz der Schweiz von der Urproduktion bis zum Endverbrauch. Die natürliche Ressource Holz durchläuft im Prozess zwischen dem schlagen im Wald bis zu den Endprodukten wie Energieholz, Produkte aus Massivholz und Holzwerkstoffen oder auch Papier und Karton verschiedene Be- und Verarbeitungs- sowie Handelsstufen. Dazu kommen Ressourcenflüsse aus dem und in das Ausland sowie Zuflüsse aus den Recycling-Prozessen von hochwertigeren Produktionsprozessen. Um dies darzustellen, werden Chord Diagramme verwendet, die die Flüsse auf den einzelnen Verarbeitungsebenen darstellen. Damit man den Überblick nicht verliert, ist auch ein Diagramm vorhanden, welches die gesamte Holzverwendung der Schweiz aufzeigt. Wichtig für die Interpretation: Phasenübergänge von einem zum anderen Diagramm sind daran zu erkennen, dass der Output auf einem Diagramm die gleiche Farbe auf dem äusseren Ring aufweist, wie der Input auf dem folgenden Diagramm(braun, hellbraun).",
+
+"authors": [
+    {"name": "Mario Limacher", "email": "mario.limacher@students.unibe.ch"},
+    {"name": "Simon Fries", "email": "simon.fries@students.unibe.ch"}
+],
+"date": "2019-05-20",
+"category": "environment",
+"software_license": "BSD"
+}

@@ -1,0 +1,1999 @@
+{
+    "links":[
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "FR",
+      "value": 18053
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "SO",
+      "value": 5217
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "99",
+      "value": 8459
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "AG",
+      "value": 5877
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "AI",
+      "value": 4311
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "AR",
+      "value": 7137
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "BE",
+      "value": 78713
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "BL",
+      "value": 4175
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "GE",
+      "value": 176
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "GL",
+      "value": 5777
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "GR",
+      "value": 53547
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "JU",
+      "value": 11767
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "LU",
+      "value": 22317
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "NE",
+      "value": 10583
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "NW",
+      "value": 4821
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "OW",
+      "value": 7737
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "SG",
+      "value": 30615
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "SH",
+      "value": 761
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "SZ",
+      "value": 16615
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "TG",
+      "value": 2110
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "TI",
+      "value": 8697
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "UR",
+      "value": 9592
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "VD",
+      "value": 22550
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "VS",
+      "value": 31446
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "ZG",
+      "value": 3075
+    },
+    {
+      "source": "Summe von B_KULTURLAND",
+      "target": "ZH",
+      "value": 6292
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "FR",
+      "value": 77995
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "SO",
+      "value": 30430
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "99",
+      "value": 27703
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "AG",
+      "value": 60461
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "AI",
+      "value": 7801
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "AR",
+      "value": 12760
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "BE",
+      "value": 208575
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "BL",
+      "value": 20938
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "GE",
+      "value": 9027
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "GL",
+      "value": 6898
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "GR",
+      "value": 55170
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "JU",
+      "value": 39875
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "LU",
+      "value": 79827
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "NE",
+      "value": 33295
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "NW",
+      "value": 5963
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "OW",
+      "value": 8012
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "SG",
+      "value": 70392
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "SH",
+      "value": 13915
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "SZ",
+      "value": 23812
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "TG",
+      "value": 46761
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "TI",
+      "value": 12571
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "UR",
+      "value": 7260
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "VD",
+      "value": 113714
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "VS",
+      "value": 37399
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "ZG",
+      "value": 9155
+    },
+    {
+      "source": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "target": "ZH",
+      "value": 68805
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "FR",
+      "value": 16205
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "SO",
+      "value": 12520
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "99",
+      "value": 12134
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "AG",
+      "value": 22800
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "AI",
+      "value": 1355
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "AR",
+      "value": 1971
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "BE",
+      "value": 58238
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "BL",
+      "value": 8869
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "GE",
+      "value": 2662
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "GL",
+      "value": 2354
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "GR",
+      "value": 27258
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "JU",
+      "value": 12648
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "LU",
+      "value": 25739
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "NE",
+      "value": 6425
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "NW",
+      "value": 2199
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "OW",
+      "value": 2538
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "SG",
+      "value": 22542
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "SH",
+      "value": 5455
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "SZ",
+      "value": 11719
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "TG",
+      "value": 13541
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "TI",
+      "value": 3834
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "UR",
+      "value": 3004
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "VD",
+      "value": 32754
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "VS",
+      "value": 15526
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "ZG",
+      "value": 4995
+    },
+    {
+      "source": "Summe von B_BIODIVERSITAET",
+      "target": "ZH",
+      "value": 28597
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "FR",
+      "value": 33613
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "SO",
+      "value": 11064
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "99",
+      "value": 20071
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "AG",
+      "value": 23289
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "AI",
+      "value": 3713
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "AR",
+      "value": 5542
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "BE",
+      "value": 81271
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "BL",
+      "value": 7234
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "GE",
+      "value": 1678
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "GL",
+      "value": 2943
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "GR",
+      "value": 26973
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "JU",
+      "value": 15430
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "LU",
+      "value": 44711
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "NE",
+      "value": 11264
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "NW",
+      "value": 2525
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "OW",
+      "value": 4188
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "SG",
+      "value": 34954
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "SH",
+      "value": 3478
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "SZ",
+      "value": 9728
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "TG",
+      "value": 22646
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "TI",
+      "value": 4162
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "UR",
+      "value": 2656
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "VD",
+      "value": 34448
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "VS",
+      "value": 10172
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "ZG",
+      "value": 4248
+    },
+    {
+      "source": "Summe von B_PRODUKTIONSSYSTEME",
+      "target": "ZH",
+      "value": 25092
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "FR",
+      "value": 8970
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "SO",
+      "value": 2152
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "99",
+      "value": 3147
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "AG",
+      "value": 2288
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "AI",
+      "value": 223
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "AR",
+      "value": 1291
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "BE",
+      "value": 26117
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "BL",
+      "value": 1332
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "GE",
+      "value": 832
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "GL",
+      "value": 950
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "GR",
+      "value": 10598
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "JU",
+      "value": 4262
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "LU",
+      "value": 9365
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "NE",
+      "value": 1861
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "NW",
+      "value": 840
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "OW",
+      "value": 1265
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "SG",
+      "value": 3156
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "SH",
+      "value": 1364
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "SZ",
+      "value": 3416
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "TG",
+      "value": 2949
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "TI",
+      "value": 614
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "UR",
+      "value": 1194
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "VD",
+      "value": 13267
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "VS",
+      "value": 5587
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "ZG",
+      "value": 993
+    },
+    {
+      "source": "Summe von B_LANDSCHAFTSQUALITAET",
+      "target": "ZH",
+      "value": 6634
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "FR",
+      "value": 1713
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "SO",
+      "value": 419
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "99",
+      "value": 801
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "AG",
+      "value": 795
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "AI",
+      "value": 2
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "AR",
+      "value": 2
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "BE",
+      "value": 2063
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "BL",
+      "value": 255
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "GE",
+      "value": 322
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "GL",
+      "value": 2
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "GR",
+      "value": 33
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "JU",
+      "value": 608
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "LU",
+      "value": 3815
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "NE",
+      "value": 446
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "OW",
+      "value": 2
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "SG",
+      "value": 777
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "SH",
+      "value": 260
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "SZ",
+      "value": 9
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "TG",
+      "value": 1415
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "TI",
+      "value": 39
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "VD",
+      "value": 2408
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "VS",
+      "value": 139
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "ZG",
+      "value": 82
+    },
+    {
+      "source": "Summe von B_RESSOURCENEFFIZIENZ",
+      "target": "ZH",
+      "value": 707
+    },
+    {
+      "source": "FR",
+      "target": "411",
+      "value": 10699
+    },
+    {
+      "source": "FR",
+      "target": "413",
+      "value": 3264
+    },
+    {
+      "source": "FR",
+      "target": "421",
+      "value": 69021
+    },
+    {
+      "source": "FR",
+      "target": "422",
+      "value": 3283
+    },
+    {
+      "source": "FR",
+      "target": "431",
+      "value": 1312
+    },
+    {
+      "source": "FR",
+      "target": "442",
+      "value": 593
+    },
+    {
+      "source": "FR",
+      "target": "443",
+      "value": 1627
+    },
+    {
+      "source": "FR",
+      "target": "451",
+      "value": 16448
+    },
+    {
+      "source": "FR",
+      "target": "452",
+      "value": 3449
+    },
+    {
+      "source": "FR",
+      "target": "999",
+      "value": 46854
+    },
+    {
+      "source": "SO",
+      "target": "411",
+      "value": 3600
+    },
+    {
+      "source": "SO",
+      "target": "413",
+      "value": 345
+    },
+    {
+      "source": "SO",
+      "target": "414",
+      "value": 384
+    },
+    {
+      "source": "SO",
+      "target": "421",
+      "value": 16989
+    },
+    {
+      "source": "SO",
+      "target": "422",
+      "value": 7616
+    },
+    {
+      "source": "SO",
+      "target": "431",
+      "value": 1460
+    },
+    {
+      "source": "SO",
+      "target": "451",
+      "value": 10356
+    },
+    {
+      "source": "SO",
+      "target": "452",
+      "value": 2518
+    },
+    {
+      "source": "SO",
+      "target": "999",
+      "value": 18534
+    },
+    {
+      "source": "99",
+      "target": "411",
+      "value": 3698
+    },
+    {
+      "source": "99",
+      "target": "413",
+      "value": 454
+    },
+    {
+      "source": "99",
+      "target": "414",
+      "value": 1603
+    },
+    {
+      "source": "99",
+      "target": "415",
+      "value": 1786
+    },
+    {
+      "source": "99",
+      "target": "421",
+      "value": 4574
+    },
+    {
+      "source": "99",
+      "target": "422",
+      "value": 3424
+    },
+    {
+      "source": "99",
+      "target": "431",
+      "value": 2571
+    },
+    {
+      "source": "99",
+      "target": "442",
+      "value": 2799
+    },
+    {
+      "source": "99",
+      "target": "443",
+      "value": 4416
+    },
+    {
+      "source": "99",
+      "target": "451",
+      "value": 5093
+    },
+    {
+      "source": "99",
+      "target": "452",
+      "value": 6775
+    },
+    {
+      "source": "99",
+      "target": "999",
+      "value": 35122
+    },
+    {
+      "source": "AG",
+      "target": "411",
+      "value": 8784
+    },
+    {
+      "source": "AG",
+      "target": "413",
+      "value": 3313
+    },
+    {
+      "source": "AG",
+      "target": "414",
+      "value": 1055
+    },
+    {
+      "source": "AG",
+      "target": "415",
+      "value": 953
+    },
+    {
+      "source": "AG",
+      "target": "421",
+      "value": 10017
+    },
+    {
+      "source": "AG",
+      "target": "422",
+      "value": 7316
+    },
+    {
+      "source": "AG",
+      "target": "431",
+      "value": 2968
+    },
+    {
+      "source": "AG",
+      "target": "442",
+      "value": 478
+    },
+    {
+      "source": "AG",
+      "target": "443",
+      "value": 343
+    },
+    {
+      "source": "AG",
+      "target": "451",
+      "value": 17555
+    },
+    {
+      "source": "AG",
+      "target": "452",
+      "value": 9068
+    },
+    {
+      "source": "AG",
+      "target": "999",
+      "value": 53660
+    },
+    {
+      "source": "AI",
+      "target": "421",
+      "value": 10370
+    },
+    {
+      "source": "AI",
+      "target": "422",
+      "value": 659
+    },
+    {
+      "source": "AI",
+      "target": "431",
+      "value": 200
+    },
+    {
+      "source": "AI",
+      "target": "442",
+      "value": 1363
+    },
+    {
+      "source": "AI",
+      "target": "443",
+      "value": 476
+    },
+    {
+      "source": "AI",
+      "target": "999",
+      "value": 4337
+    },
+    {
+      "source": "AR",
+      "target": "421",
+      "value": 21486
+    },
+    {
+      "source": "AR",
+      "target": "422",
+      "value": 1875
+    },
+    {
+      "source": "AR",
+      "target": "431",
+      "value": 1015
+    },
+    {
+      "source": "AR",
+      "target": "442",
+      "value": 610
+    },
+    {
+      "source": "AR",
+      "target": "999",
+      "value": 3716
+    },
+    {
+      "source": "BE",
+      "target": "411",
+      "value": 15964
+    },
+    {
+      "source": "BE",
+      "target": "413",
+      "value": 5487
+    },
+    {
+      "source": "BE",
+      "target": "414",
+      "value": 801
+    },
+    {
+      "source": "BE",
+      "target": "415",
+      "value": 722
+    },
+    {
+      "source": "BE",
+      "target": "421",
+      "value": 220208
+    },
+    {
+      "source": "BE",
+      "target": "422",
+      "value": 29874
+    },
+    {
+      "source": "BE",
+      "target": "431",
+      "value": 12568
+    },
+    {
+      "source": "BE",
+      "target": "442",
+      "value": 4110
+    },
+    {
+      "source": "BE",
+      "target": "443",
+      "value": 2089
+    },
+    {
+      "source": "BE",
+      "target": "451",
+      "value": 31812
+    },
+    {
+      "source": "BE",
+      "target": "452",
+      "value": 10773
+    },
+    {
+      "source": "BE",
+      "target": "999",
+      "value": 120569
+    },
+    {
+      "source": "BL",
+      "target": "411",
+      "value": 1784
+    },
+    {
+      "source": "BL",
+      "target": "413",
+      "value": 199
+    },
+    {
+      "source": "BL",
+      "target": "414",
+      "value": 856
+    },
+    {
+      "source": "BL",
+      "target": "415",
+      "value": 243
+    },
+    {
+      "source": "BL",
+      "target": "421",
+      "value": 13496
+    },
+    {
+      "source": "BL",
+      "target": "422",
+      "value": 7193
+    },
+    {
+      "source": "BL",
+      "target": "431",
+      "value": 1907
+    },
+    {
+      "source": "BL",
+      "target": "451",
+      "value": 3443
+    },
+    {
+      "source": "BL",
+      "target": "452",
+      "value": 1657
+    },
+    {
+      "source": "BL",
+      "target": "999",
+      "value": 12025
+    },
+    {
+      "source": "GE",
+      "target": "411",
+      "value": 5794
+    },
+    {
+      "source": "GE",
+      "target": "413",
+      "value": 326
+    },
+    {
+      "source": "GE",
+      "target": "415",
+      "value": 5214
+    },
+    {
+      "source": "GE",
+      "target": "431",
+      "value": 309
+    },
+    {
+      "source": "GE",
+      "target": "452",
+      "value": 1362
+    },
+    {
+      "source": "GE",
+      "target": "999",
+      "value": 1694
+    },
+    {
+      "source": "GL",
+      "target": "421",
+      "value": 14649
+    },
+    {
+      "source": "GL",
+      "target": "422",
+      "value": 2163
+    },
+    {
+      "source": "GL",
+      "target": "431",
+      "value": 882
+    },
+    {
+      "source": "GL",
+      "target": "999",
+      "value": 1230
+    },
+    {
+      "source": "GR",
+      "target": "415",
+      "value": 674
+    },
+    {
+      "source": "GR",
+      "target": "421",
+      "value": 75766
+    },
+    {
+      "source": "GR",
+      "target": "422",
+      "value": 49490
+    },
+    {
+      "source": "GR",
+      "target": "431",
+      "value": 19938
+    },
+    {
+      "source": "GR",
+      "target": "451",
+      "value": 444
+    },
+    {
+      "source": "GR",
+      "target": "452",
+      "value": 446
+    },
+    {
+      "source": "GR",
+      "target": "999",
+      "value": 26821
+    },
+    {
+      "source": "JU",
+      "target": "411",
+      "value": 2950
+    },
+    {
+      "source": "JU",
+      "target": "421",
+      "value": 26697
+    },
+    {
+      "source": "JU",
+      "target": "422",
+      "value": 12516
+    },
+    {
+      "source": "JU",
+      "target": "431",
+      "value": 2717
+    },
+    {
+      "source": "JU",
+      "target": "451",
+      "value": 10152
+    },
+    {
+      "source": "JU",
+      "target": "452",
+      "value": 5706
+    },
+    {
+      "source": "JU",
+      "target": "999",
+      "value": 23851
+    },
+    {
+      "source": "LU",
+      "target": "411",
+      "value": 984
+    },
+    {
+      "source": "LU",
+      "target": "413",
+      "value": 263
+    },
+    {
+      "source": "LU",
+      "target": "414",
+      "value": 292
+    },
+    {
+      "source": "LU",
+      "target": "415",
+      "value": 138
+    },
+    {
+      "source": "LU",
+      "target": "421",
+      "value": 50990
+    },
+    {
+      "source": "LU",
+      "target": "422",
+      "value": 20661
+    },
+    {
+      "source": "LU",
+      "target": "431",
+      "value": 3570
+    },
+    {
+      "source": "LU",
+      "target": "442",
+      "value": 11090
+    },
+    {
+      "source": "LU",
+      "target": "443",
+      "value": 1632
+    },
+    {
+      "source": "LU",
+      "target": "451",
+      "value": 3148
+    },
+    {
+      "source": "LU",
+      "target": "452",
+      "value": 3138
+    },
+    {
+      "source": "LU",
+      "target": "999",
+      "value": 89867
+    },
+    {
+      "source": "NE",
+      "target": "411",
+      "value": 1833
+    },
+    {
+      "source": "NE",
+      "target": "415",
+      "value": 1145
+    },
+    {
+      "source": "NE",
+      "target": "421",
+      "value": 37838
+    },
+    {
+      "source": "NE",
+      "target": "422",
+      "value": 6984
+    },
+    {
+      "source": "NE",
+      "target": "431",
+      "value": 619
+    },
+    {
+      "source": "NE",
+      "target": "451",
+      "value": 2827
+    },
+    {
+      "source": "NE",
+      "target": "452",
+      "value": 1813
+    },
+    {
+      "source": "NE",
+      "target": "999",
+      "value": 10814
+    },
+    {
+      "source": "NW",
+      "target": "421",
+      "value": 10563
+    },
+    {
+      "source": "NW",
+      "target": "422",
+      "value": 1916
+    },
+    {
+      "source": "NW",
+      "target": "431",
+      "value": 907
+    },
+    {
+      "source": "NW",
+      "target": "442",
+      "value": 570
+    },
+    {
+      "source": "NW",
+      "target": "999",
+      "value": 2391
+    },
+    {
+      "source": "OW",
+      "target": "421",
+      "value": 19326
+    },
+    {
+      "source": "OW",
+      "target": "422",
+      "value": 1153
+    },
+    {
+      "source": "OW",
+      "target": "431",
+      "value": 484
+    },
+    {
+      "source": "OW",
+      "target": "999",
+      "value": 2780
+    },
+    {
+      "source": "SG",
+      "target": "413",
+      "value": 1542
+    },
+    {
+      "source": "SG",
+      "target": "414",
+      "value": 430
+    },
+    {
+      "source": "SG",
+      "target": "415",
+      "value": 489
+    },
+    {
+      "source": "SG",
+      "target": "421",
+      "value": 96941
+    },
+    {
+      "source": "SG",
+      "target": "422",
+      "value": 14217
+    },
+    {
+      "source": "SG",
+      "target": "431",
+      "value": 6163
+    },
+    {
+      "source": "SG",
+      "target": "442",
+      "value": 4145
+    },
+    {
+      "source": "SG",
+      "target": "443",
+      "value": 2538
+    },
+    {
+      "source": "SG",
+      "target": "451",
+      "value": 2121
+    },
+    {
+      "source": "SG",
+      "target": "452",
+      "value": 667
+    },
+    {
+      "source": "SG",
+      "target": "999",
+      "value": 33182
+    },
+    {
+      "source": "SH",
+      "target": "411",
+      "value": 7753
+    },
+    {
+      "source": "SH",
+      "target": "415",
+      "value": 1256
+    },
+    {
+      "source": "SH",
+      "target": "431",
+      "value": 196
+    },
+    {
+      "source": "SH",
+      "target": "451",
+      "value": 3496
+    },
+    {
+      "source": "SH",
+      "target": "452",
+      "value": 2016
+    },
+    {
+      "source": "SH",
+      "target": "999",
+      "value": 10517
+    },
+    {
+      "source": "SZ",
+      "target": "421",
+      "value": 44508
+    },
+    {
+      "source": "SZ",
+      "target": "422",
+      "value": 7028
+    },
+    {
+      "source": "SZ",
+      "target": "431",
+      "value": 4601
+    },
+    {
+      "source": "SZ",
+      "target": "442",
+      "value": 1211
+    },
+    {
+      "source": "SZ",
+      "target": "443",
+      "value": 492
+    },
+    {
+      "source": "SZ",
+      "target": "999",
+      "value": 7460
+    },
+    {
+      "source": "TG",
+      "target": "411",
+      "value": 5905
+    },
+    {
+      "source": "TG",
+      "target": "413",
+      "value": 2713
+    },
+    {
+      "source": "TG",
+      "target": "414",
+      "value": 2628
+    },
+    {
+      "source": "TG",
+      "target": "415",
+      "value": 565
+    },
+    {
+      "source": "TG",
+      "target": "421",
+      "value": 23842
+    },
+    {
+      "source": "TG",
+      "target": "422",
+      "value": 3123
+    },
+    {
+      "source": "TG",
+      "target": "431",
+      "value": 2200
+    },
+    {
+      "source": "TG",
+      "target": "442",
+      "value": 1039
+    },
+    {
+      "source": "TG",
+      "target": "443",
+      "value": 962
+    },
+    {
+      "source": "TG",
+      "target": "451",
+      "value": 9507
+    },
+    {
+      "source": "TG",
+      "target": "452",
+      "value": 3468
+    },
+    {
+      "source": "TG",
+      "target": "999",
+      "value": 33470
+    },
+    {
+      "source": "TI",
+      "target": "411",
+      "value": 354
+    },
+    {
+      "source": "TI",
+      "target": "413",
+      "value": 316
+    },
+    {
+      "source": "TI",
+      "target": "415",
+      "value": 1438
+    },
+    {
+      "source": "TI",
+      "target": "421",
+      "value": 9870
+    },
+    {
+      "source": "TI",
+      "target": "422",
+      "value": 2847
+    },
+    {
+      "source": "TI",
+      "target": "431",
+      "value": 10575
+    },
+    {
+      "source": "TI",
+      "target": "999",
+      "value": 4519
+    },
+    {
+      "source": "UR",
+      "target": "421",
+      "value": 16199
+    },
+    {
+      "source": "UR",
+      "target": "422",
+      "value": 2607
+    },
+    {
+      "source": "UR",
+      "target": "431",
+      "value": 2766
+    },
+    {
+      "source": "UR",
+      "target": "999",
+      "value": 2135
+    },
+    {
+      "source": "VD",
+      "target": "411",
+      "value": 49956
+    },
+    {
+      "source": "VD",
+      "target": "413",
+      "value": 3042
+    },
+    {
+      "source": "VD",
+      "target": "414",
+      "value": 1423
+    },
+    {
+      "source": "VD",
+      "target": "415",
+      "value": 11186
+    },
+    {
+      "source": "VD",
+      "target": "421",
+      "value": 34473
+    },
+    {
+      "source": "VD",
+      "target": "422",
+      "value": 8716
+    },
+    {
+      "source": "VD",
+      "target": "431",
+      "value": 3833
+    },
+    {
+      "source": "VD",
+      "target": "451",
+      "value": 36892
+    },
+    {
+      "source": "VD",
+      "target": "452",
+      "value": 16880
+    },
+    {
+      "source": "VD",
+      "target": "999",
+      "value": 52739
+    },
+    {
+      "source": "VS",
+      "target": "413",
+      "value": 964
+    },
+    {
+      "source": "VS",
+      "target": "414",
+      "value": 3465
+    },
+    {
+      "source": "VS",
+      "target": "415",
+      "value": 12566
+    },
+    {
+      "source": "VS",
+      "target": "421",
+      "value": 42732
+    },
+    {
+      "source": "VS",
+      "target": "422",
+      "value": 7554
+    },
+    {
+      "source": "VS",
+      "target": "431",
+      "value": 21493
+    },
+    {
+      "source": "VS",
+      "target": "999",
+      "value": 11495
+    },
+    {
+      "source": "ZG",
+      "target": "421",
+      "value": 11728
+    },
+    {
+      "source": "ZG",
+      "target": "422",
+      "value": 3094
+    },
+    {
+      "source": "ZG",
+      "target": "431",
+      "value": 937
+    },
+    {
+      "source": "ZG",
+      "target": "451",
+      "value": 771
+    },
+    {
+      "source": "ZG",
+      "target": "999",
+      "value": 6019
+    },
+    {
+      "source": "ZH",
+      "target": "411",
+      "value": 17111
+    },
+    {
+      "source": "ZH",
+      "target": "413",
+      "value": 3846
+    },
+    {
+      "source": "ZH",
+      "target": "414",
+      "value": 927
+    },
+    {
+      "source": "ZH",
+      "target": "415",
+      "value": 1113
+    },
+    {
+      "source": "ZH",
+      "target": "421",
+      "value": 32211
+    },
+    {
+      "source": "ZH",
+      "target": "422",
+      "value": 10040
+    },
+    {
+      "source": "ZH",
+      "target": "431",
+      "value": 4360
+    },
+    {
+      "source": "ZH",
+      "target": "442",
+      "value": 399
+    },
+    {
+      "source": "ZH",
+      "target": "443",
+      "value": 284
+    },
+    {
+      "source": "ZH",
+      "target": "451",
+      "value": 15814
+    },
+    {
+      "source": "ZH",
+      "target": "452",
+      "value": 7678
+    },
+    {
+      "source": "ZH",
+      "target": "999",
+      "value": 42345
+    },
+    {
+      "source": "411",
+      "target": "1",
+      "value": 2453
+    },
+    {
+      "source": "413",
+      "target": "1",
+      "value": 7502
+    },
+    {
+      "source": "414",
+      "target": "1",
+      "value": 2308
+    },
+    {
+      "source": "415",
+      "target": "1",
+      "value": 3317
+    },
+    {
+      "source": "421",
+      "target": "1",
+      "value": 148934
+    },
+    {
+      "source": "422",
+      "target": "1",
+      "value": 96473
+    },
+    {
+      "source": "431",
+      "target": "1",
+      "value": 39284
+    },
+    {
+      "source": "442",
+      "target": "1",
+      "value": 264
+    },
+    {
+      "source": "443",
+      "target": "1",
+      "value": 2955
+    },
+    {
+      "source": "451",
+      "target": "1",
+      "value": 6400
+    },
+    {
+      "source": "452",
+      "target": "1",
+      "value": 14420
+    },
+    {
+      "source": "999",
+      "target": "1",
+      "value": 90460
+    },
+    {
+      "source": "411",
+      "target": "0",
+      "value": 134718
+    },
+    {
+      "source": "413",
+      "target": "0",
+      "value": 18571
+    },
+    {
+      "source": "414",
+      "target": "0",
+      "value": 11556
+    },
+    {
+      "source": "415",
+      "target": "0",
+      "value": 36171
+    },
+    {
+      "source": "421",
+      "target": "0",
+      "value": 765558
+    },
+    {
+      "source": "422",
+      "target": "0",
+      "value": 118875
+    },
+    {
+      "source": "431",
+      "target": "0",
+      "value": 71266
+    },
+    {
+      "source": "442",
+      "target": "0",
+      "value": 28142
+    },
+    {
+      "source": "443",
+      "target": "0",
+      "value": 11903
+    },
+    {
+      "source": "451",
+      "target": "0",
+      "value": 163479
+    },
+    {
+      "source": "452",
+      "target": "0",
+      "value": 62993
+    },
+    {
+      "source": "999",
+      "target": "0",
+      "value": 567683
+    },
+    {
+      "source": "Talgebiet",
+      "target": "Summe von B_KULTURLAND",
+      "value": 70845
+    },
+    {
+      "source": "Talgebiet",
+      "target": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "value": 641070
+    },
+    {
+      "source": "Talgebiet",
+      "target": "Summe von B_BIODIVERSITAET",
+      "value": 210843
+    },
+    {
+      "source": "Talgebiet",
+      "target": "Summe von B_PRODUKTIONSSYSTEME",
+      "value": 263631
+    },
+    {
+      "source": "Talgebiet",
+      "target": "Summe von B_LANDSCHAFTSQUALITAET",
+      "value": 59429
+    },
+    {
+      "source": "Talgebiet",
+      "target": "Summe von B_RESSOURCENEFFIZIENZ",
+      "value": 15190
+    },
+    {
+      "source": "Berggebiet",
+      "target": "Summe von B_KULTURLAND",
+      "value": 309574
+    },
+    {
+      "source": "Berggebiet",
+      "target": "Summe von B_VERSORGUNGSSICHERHEIT",
+      "value": 447442
+    },
+    {
+      "source": "Berggebiet",
+      "target": "Summe von B_BIODIVERSITAET",
+      "value": 147040
+    },
+    {
+      "source": "Berggebiet",
+      "target": "Summe von B_PRODUKTIONSSYSTEME",
+      "value": 183462
+    },
+    {
+      "source": "Berggebiet",
+      "target": "Summe von B_LANDSCHAFTSQUALITAET",
+      "value": 55239
+    },
+    {
+      "source": "Berggebiet",
+      "target": "Summe von B_RESSOURCENEFFIZIENZ",
+      "value": 1922
+    }
+   ]
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="library/d3.js"></script>
+        <script src="library/underscore.js"></script>
+        <script src="library/mapper.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+        <style>
+        	a {
+	        	text-decoration: none!important;
+        	}
+          p, a, span, div {
+	          font-family: Open Sans;
+	          font-size: 10pt;
+	          color: #111111;
+          }
+          
+          #tooltip {
+            color: white;
+            opacity: .9;
+            background: #333;
+            padding: 5px;
+            border: 3px solid white;
+            border-radius: 5px;
+            position: absolute;
+            z-index: 10;
+            visibility: hidden;
+            white-space: nowrap;
+            pointer-events: none;
+          }
+          #circle circle {
+            fill: none;
+            pointer-events: all;
+          }
+          path.group {
+            fill-opacity: .8;
+          }
+          path.chord {
+            fill-opacity: .8;
+            stroke: #000;
+            stroke-width: .25px;
+          }
+          #circle:hover path.fade {
+            display: none;
+          }
+          #control {
+	          width: 100%;
+	          height: 50px;
+	          overflow: hidden;
+	          background-color: white;
+          }
+          .wrapperDiv {
+	          width: 470px;
+	          height: 550px;
+	          float: left;
+	          overflow: hidden;
+	          
+          }
+          .visualizationDiv {
+	          width: 450px;
+	          height: 500px;
+	          float: left;
+          }
+          .imageReference {
+	          font-size: 10pt;
+	          float: bottom;
+	          text-align: center;
+	          width: 450px;
+	          height: 50px;
+	          background-color: white;
+          }
+        </style>
+    </head>
+    <body>
+    	<script>
+	        function doInitial(){
+		        makeChord(theYear, 'data/EuroLiabilities.csv', colorLiabilities, '#chart1', "Liabilities", "Eurozone");
+		        makeChord(theYear, 'data/EuroAssets.csv', colorAssets, '#chart2', "Assets", "Eurozone");
+		        makeChord(theYear, 'data/EuroBanks.csv', colorBanks, '#chart3', "Banks Assets", "Eurozone");
+		        makeChord(theYear, 'data/EuroGov.csv', colorBanks, '#chart4', "Banks Assets", "Eurozone");
+	        }
+	        function doChange(changedYear){
+		        removeVisualization();
+		        var newYear = changedYear;
+		        makeChord(newYear, 'data/EuroLiabilities.csv', colorLiabilities, '#chart1', "Liabilities", "Eurozone");
+		        makeChord(newYear, 'data/EuroAssets.csv', colorAssets, '#chart2', "Assets", "Eurozone");
+		        makeChord(newYear, 'data/EuroBanks.csv', colorBanks, '#chart3', "Banks Assets", "Eurozone");
+		        makeChord(newYear, 'data/EuroGov.csv', colorBanks, '#chart4', "Banks Assets", "Eurozone");
+	        }
+        </script>
+        <div id="tooltip"></div>
+        <div id="control">
+        	<span>You may select the year you are interested in: </span>
+            <form oninput="amount.value=rangeInput.value">
+                <input type="range" id="rangeInput" name="rangeInput" min="2001" max="2012" step="1" value="2012" 
+                	onchange="doChange(this.value);">
+                <output name="amount" for="rangeInput">2012</output>
+            </form>
+        </div>
+        
+        
+        <div class="wrapperDiv">
+        	<div class="visualizationDiv" id="chart1"></div>
+        	<div class="imageReference">
+        		<span>Liabilities in Mio USD<br>
+        			<a href="http://elibrary-data.imf.org/QueryBuilder.aspx?s=321&key=1445290&f=1&ts=1&ys=2005&ye=2014&ms=1&me=12&ds=1&de=31&did=321,322,352&id=13842,15;22;60;75;80;81;85;88;107;110;126;134;143;163;186;209;210;214,15;22;60;75;80;81;85;88;107;110;126;134;143;163;186;209;210;214" target="_blank">IMF Data, Portfolio Investment, Total, Liabilities</a>
+        		</span>
+        	</div>
+        </div>
+        <div class="wrapperDiv">
+        	<div class="visualizationDiv" id="chart2"></div>
+        	<div class="imageReference">
+        		<span>Assets in Mio USD<br>
+        			<a href="http://elibrary-data.imf.org/QueryBuilder.aspx?s=321&key=1445290&f=1&ts=1&ys=2005&ye=2014&ms=1&me=12&ds=1&de=31&did=321,322,352&id=13759,15;22;60;75;80;81;85;88;107;110;126;134;143;163;186;209;210;214,15;22;60;75;80;81;85;88;107;110;126;134;143;163;186;209;210;214" target="_blank">IMF Data, Portfolio Investment, Total, Assets</a>
+        		</span>
+        	</div>
+        </div>
+        <div class="wrapperDiv">
+        	<div class="visualizationDiv" id="chart3"></div>
+        	<div class="imageReference">
+        		<span>Banks in Mio USD<br>
+        			<a href="http://elibrary-data.imf.org/QueryBuilder.aspx?s=321&key=1445290&f=1&ts=1&ys=2000&ye=2014&ms=1&me=12&ds=1&de=31&did=321,322,352&id=17396,15;22;60;75;80;81;85;88;107;110;126;134;143;163;186;209;210;214,15;22;60;75;80;81;85;88;107;110;126;134;143;163;186;209;210;214" target="_blank">IMF Data, Portfolio Investment, Total Banks, Assets</a>
+        		</span>
+        	</div>
+        </div>
+        <div class="wrapperDiv">
+        	<div class="visualizationDiv" id="chart4"></div>
+        	<div class="imageReference">
+        		<span>Government Debt in Mio USD<br>
+        			<a href="http://elibrary-data.imf.org/QueryBuilder.aspx?s=321&key=1445290&f=1&ts=1&ys=2000&ye=2014&ms=1&me=12&ds=1&de=31&did=321,322,352&id=17395,15;22;60;75;80;81;85;88;107;110;126;134;143;163;186;209;210;214,15;22;60;75;80;81;85;88;107;110;126;134;143;163;186;209;210;214" target="_blank">IMF Data, Portfolio Investment, Total, General Government, Assets</a>
+        		</span>
+        	</div>
+        </div>
+        <script src="functions/myFunctions.js" onload="doInitial();"></script>
+
+
+
+        
+        
+    </body>
+</html>

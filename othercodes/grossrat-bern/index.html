@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Grosser Rat Kanton Bern</title>
+
+    <!-- STYLES -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- FONT FOR iOS -->
+    <link href="css" rel="stylesheet">
+
+    <!-- STYLE FOR ANIMATED MENU ICON BARS-->
+    <link rel="stylesheet" href="navbar_animated.css">
+
+    <style>
+        /* PAGE STYLE */
+        .container-fluid {
+            font-family: 'Arial';
+        }
+        .navbar-default {
+            font-family: 'Arial';
+            background-color: #FF0000;
+        }
+        .selectpicker {text-align:center;}
+        .button, .dropdown-menu {margin:10px auto}
+        .dropdown-menu {width:200px; left:50%; margin-left:-100px;}
+        .content {
+            font-family: 'Arial';
+        }
+        .container {
+            margin: 0;
+        }
+        .dl-horizontal {
+            padding: 10px;
+            background-color: lightgrey;
+        }
+        p {
+            font-family: "Arial";  
+            font-size: 19px;
+        }
+        body {
+            margin-top: 65px;
+        }
+        /* SANKEY STYLE */
+        .node rect {
+            cursor: move;
+            fill-opacity: .9;
+            shape-rendering: crispEdges;
+        }
+
+        .node text {
+            pointer-events: none;
+            font-family: "Arial";
+            font-size: 20px;
+        }
+
+        .link {
+            fill: none;
+            stroke: #000;
+            stroke-opacity: .3;
+        }
+
+        .link:hover {
+            stroke-opacity: .5;
+        }
+    </style>
+    <script src="d3.min.js"></script>
+    <script src="sankey.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </head>
+
+
+    <body>
+
+        <!-- NAVIGATION -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+
+                    <!-- RESPONSIVE NAVIGATION -->
+                    <div class="hidden-xs">
+                        <a class="navbar-brand" href="index.html" style="color:black">Grosser Rat Kanton Bern</a>
+                    </div>
+                    <div class="visible-xs">
+                        <a class="navbar-brand" href="index.html">
+                            <font color="black">Grosser Rat Kanton Bern</font>
+                            <font color="white">Visualisierung</font>
+                        </a>
+                    </div>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navdropdown">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navdropdown">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Visualisierung</a></li>
+                        <li><a href="about.html">Über</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- CONTENT -->
+        <div class="content" style="max-width: 1200px; margin: 0 auto; padding-left: 15px; padding-right: 15px;">
+            <div class="col-md-12 col-sm-12 col-xs-12 content" id="inhalt">
+                <div class="panel panel-default">
+                    <div class="panel-body"> <h1>Abstimmungen Grosser Rat Kanton Bern</h1>
+
+                        <h3>Diagramm</h3>
+                        <p>Die Ursprüngliche Frage, welche mich dazu bewegte diese Visualisierung zu erstellen war: <br><br>
+                            <b>Was macht einen Vorstoss im Grossen Rat erfolgreich?</b> <br><br>
+                            Gibt es Parteien die erfolgreicher sind als andere? Spielt das Geschlecht eine Rolle? Gibt es ein Stadt-Land Gefälle? Oder ist es am Ende nur das Alter, welches den Erfolg bestimmt? <br>
+                            Diese Darstellung soll ein wenig Licht auf diese Fragestellungen werfen. <br>
+                            Die Linke Spalte beschreibt das Thema des Vorstosses, die Direktion. <br>
+                            In der Mittleren Spalte steht je nach Auswahl die Partei, das Geschlecht, die Region oder das Alter(Stand 25.05.2018) der Grossräte. <br>
+                            In der letzten Spalte schlieslich die Ergebnisse der Abstimmungen. <br>
+                            Um genaue Informationen zu Erhalten, zum Beispiel die genaue Anzahl der Vorstösse oder der Anteil an allen Vorstössen, einfach mit der Maus über die gewünschte Stelle fahren.
+                        </p></div>
+                </div>
+                <div class="selectpicker">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio"  onclick="partei()">Partei</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio"  onclick="geschlecht()">Geschlecht</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio"  onclick="alter()">Alter</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio"  onclick="region()">Region</label>
+                    </div>
+
+                    <div id="option">
+                        <input name="updateButton" 
+                               type="button" 
+                               value="Update" 
+                               onclick="removeAndUpdateData()" />
+                    </div>
+                </div>
+
+                <div id="chart">
+
+                    <script>
+                        var auswahl = "partei.json";
+                        var units = "Vorstösse";
+
+                        var margin = {top: 10, right: 10, bottom: 10, left: 10},
+                            width = document.getElementById("inhalt").offsetWidth
+
+                        var height = width*0.6
+
+
+                        var formatNumber = d3.format(",.0f"),    // zero decimal places
+                            format = function(d) { return formatNumber(d) + " " + units; },
+                            color = d3.scale.category20();
+
+                        // append the svg canvas to the page
+                        var svg = d3.select("#chart").append("svg")
+                        .attr("width", width + margin.left + margin.right)
+                        .attr("height", height + margin.top + margin.bottom)
+                        .append("g")
+                        .attr("transform", 
+                              "translate(" + margin.left + "," + margin.top + ")");
+
+                        // Set the sankey diagram properties
+                        var sankey = d3.sankey()
+                        .nodeWidth(36)
+                        .nodePadding(10)
+                        .size([width, height]);
+
+                        var path = sankey.link();
+
+                        // load the data
+                        d3.json(auswahl, function(error, graph) {
+
+                            var nodeMap = {};
+
+                            graph.nodes.forEach(function(x) { nodeMap[x.name] = x; });
+                            graph.links = graph.links.map(function(x) {
+                                return {
+                                    source: nodeMap[x.source],
+                                    target: nodeMap[x.target],
+                                    value: x.value,
+                                    nodeColorTarget: x.nodeColorTarget
+                                };
+                            });
+
+                            sankey
+                                .nodes(graph.nodes)
+                                .links(graph.links)
+                                .layout(0);
+
+                            // add in the links
+                            var link = svg.append("g").selectAll(".link")
+                            .data(graph.links)
+                            .enter().append("path")
+                            .attr("class", "link")
+                            .attr("d", path)
+                            .style("stroke-width", function(d) { return Math.max(1, d.dy); })
+                            .style("stroke",function(d){ return d.nodeColorTarget;})
+                            .sort(function(a, b) { return a.dy - b.dy; });
+
+
+
+                            // add in the nodes
+                            var node = svg.append("g").selectAll(".node")
+                            .data(graph.nodes)
+                            .enter().append("g")
+                            .attr("class", "node")
+                            .attr("transform", function(d) { 
+                                return "translate(" + d.x + "," + d.y + ")"; })
+                            .call(d3.behavior.drag()
+                                  .origin(function(d) { return d; })
+                                  .on("dragstart", function() { 
+                                this.parentNode.appendChild(this); })
+                                  .on("drag", dragmove));
+
+
+                            // add the link titles
+                            link.append("title")
+                                .text(function(d) {
+                                return d.source.name + " → " + 
+                                    d.target.name + "\n" + format(d.value)+ "\n" + Math.round((d.value/116)*100) + "% aller Vorstösse"; });
+
+                            // add the rectangles for the nodes
+                            node.append("rect")
+                                .attr("height", function(d) { return d.dy; })
+                                .attr("width", sankey.nodeWidth())
+                                .style("fill", function(d) { 
+                                return d.nodeColor; })
+                                .append("title")
+                                .text(function(d) { 
+                                return d.name + "\n" + format(d.value) + "\n" + Math.round((d.value/116)*100) + "% aller Vorstösse"; });
+
+                            // add in the title for the nodes
+                            node.append("text")
+                                .attr("x", -6)
+                                .attr("y", function(d) { return d.dy / 2; })
+                                .attr("dy", ".35em")
+                                .attr("text-anchor", "end")
+                                .attr("transform", null)
+                                .text(function(d) { return d.name; })
+                                .filter(function(d) { return d.x < width / 2; })
+                                .attr("x", 6 + sankey.nodeWidth())
+                                .attr("text-anchor", "start");
+
+                            // the function for moving the nodes
+                            function dragmove(d) {
+                                d3.select(this).attr("transform", 
+                                                     "translate(" + (
+                                    d.x = Math.max(0, Math.min(width - d.dx, d3.event.x))
+                                ) + "," + (
+                                    d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))
+                                ) + ")");
+                                sankey.relayout();
+                                link.attr("d", path);
+                            }
+
+
+
+                        });
+                        function partei(){
+                            auswahl= "partei.json"
+                        };
+                        function geschlecht(){
+                            auswahl= "geschlecht.json"
+                        };
+                        function alter(){
+                            auswahl= "alter.json"
+                        };
+                        function region(){
+                            auswahl= "region.json"
+                        };
+
+
+                        //remove existing Data
+                        function removeAndUpdateData(){
+                            d3.select("svg")
+                                .remove();
+
+                            updateData();
+                        }
+
+
+
+                        // Update Data
+                        function updateData() {
+
+                            var svg = d3.select("#chart").append("svg")
+                            .attr("width", width + margin.left + margin.right)
+                            .attr("height", height + margin.top + margin.bottom)
+                            .append("g")
+                            .attr("transform", 
+                                  "translate(" + margin.left + "," + margin.top + ")");
+
+                            // Set the sankey diagram properties
+                            var sankey = d3.sankey()
+                            .nodeWidth(36)
+                            .nodePadding(10)
+                            .size([width, height]);
+
+                            var path = sankey.link();
+
+                            d3.json(auswahl, function(error, graph) {
+
+                                var nodeMap = {};
+
+                                graph.nodes.forEach(function(x) { nodeMap[x.name] = x; });
+                                graph.links = graph.links.map(function(x) {
+                                    return {
+                                        source: nodeMap[x.source],
+                                        target: nodeMap[x.target],
+                                        value: x.value,
+                                        nodeColorTarget: x.nodeColorTarget
+                                    };
+                                });
+
+                                sankey
+                                    .nodes(graph.nodes)
+                                    .links(graph.links)
+                                    .layout(0);
+
+                                // add in the links
+                                var link = svg.append("g").selectAll(".link")
+                                .data(graph.links)
+                                .enter().append("path")
+                                .attr("class", "link")
+                                .attr("d", path)
+                                .style("stroke-width", function(d) { return Math.max(1, d.dy); })
+                                .style("stroke",function(d){ return d.nodeColorTarget;})
+                                .sort(function(a, b) { return a.dy - b.dy; });
+
+                                // add the link titles
+                                link.append("title")
+                                    .text(function(d) {
+                                    return d.source.name + " → " + 
+                                        d.target.name + "\n" + format(d.value)+ "\n" + Math.round((d.value/116)*100) + "% aller Vorstösse"; })
+                                ;
+
+                                // add in the nodes
+                                var node = svg.append("g").selectAll(".node")
+                                .data(graph.nodes)
+                                .enter().append("g")
+                                .attr("class", "node")
+                                .attr("transform", function(d) { 
+                                    return "translate(" + d.x + "," + d.y + ")"; })
+                                .call(d3.behavior.drag()
+                                      .origin(function(d) { return d; })
+                                      .on("dragstart", function() { 
+                                    this.parentNode.appendChild(this); })
+                                      .on("drag", dragmove))
+                                ;
+
+                                // add the rectangles for the nodes
+                                node.append("rect")
+                                    .attr("height", function(d) { return d.dy; })
+                                    .attr("width", sankey.nodeWidth())
+                                    .style("fill", function(d) { 
+                                    return d.nodeColor; })
+                                    .append("title")
+                                    .text(function(d) { 
+                                    return d.name + "\n" + format(d.value) + "\n" + Math.round((d.value/116)*100) + "% aller Vorstösse"; })
+                                ;
+
+                                // add in the title for the nodes
+                                node.append("text")
+                                    .attr("x", -6)
+                                    .attr("y", function(d) { return d.dy / 2; })
+                                    .attr("dy", ".35em")
+                                    .attr("text-anchor", "end")
+                                    .attr("transform", null)
+                                    .text(function(d) { return d.name; })
+                                    .filter(function(d) { return d.x < width / 2; })
+                                    .attr("x", 6 + sankey.nodeWidth())
+                                    .attr("text-anchor", "start")
+                                ;
+
+                                // the function for moving the nodes
+                                function dragmove(d) {
+                                    d3.select(this).attr("transform", 
+                                                         "translate(" + (
+                                        d.x = Math.max(0, Math.min(width - d.dx, d3.event.x))
+                                    ) + "," + (
+                                        d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))
+                                    ) + ")");
+                                    sankey.relayout();
+                                    link.attr("d", path);
+                                }
+
+                            });
+                        }
+
+
+                    </script>
+                </div>
+
+            </div>
+
+
+            </body></html>

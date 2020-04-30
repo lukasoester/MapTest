@@ -1,0 +1,335 @@
+{
+    "links":[
+        {
+            "source": "Bau-Verkehr-undEnergie",
+            "target": "BDP/PBD",
+            "value": 5,
+            "nodeColorTarget": "#FF7F00"
+        },
+        {
+            "source": "Bau-Verkehr-undEnergie",
+            "target": "glp/pvl",
+            "value": 2,
+            "nodeColorTarget": "#98D812"
+        },
+        {
+            "source": "Bau-Verkehr-undEnergie",
+            "target": "SP-JUSO-PSA/PS-JS-PSA",
+            "value": 2,
+            "nodeColorTarget": "#EE0000"
+        },
+        {
+            "source": "Bau-Verkehr-undEnergie",
+            "target": "SVP/UDC",
+            "value": 6,
+            "nodeColorTarget": "#008B00"
+        },
+        {
+            "source": "Erziehung",
+            "target": "FDP/PLR",
+            "value": 4,
+            "nodeColorTarget": "#00BFFF"
+        },
+        {
+            "source": "Erziehung",
+            "target": "Grüne/LesVerts",
+            "value": 6,
+            "nodeColorTarget": "#00C500"
+        },
+        {
+            "source": "Erziehung",
+            "target": "SP-JUSO-PSA/PS-JS-PSA",
+            "value": 6,
+            "nodeColorTarget": "#EE0000"
+        },
+        {
+            "source": "Erziehung",
+            "target": "SVP/UDC",
+            "value": 5,
+            "nodeColorTarget": "#008B00"
+        },
+        {
+            "source": "Finanzen",
+            "target": "BDP/PBD",
+            "value": 2,
+            "nodeColorTarget": "#FF7F00"
+        },
+        {
+            "source": "Finanzen",
+            "target": "EVP/PEV",
+            "value": 2,
+            "nodeColorTarget": "#FFCC00"
+        },
+        {
+            "source": "Finanzen",
+            "target": "FDP/PLR",
+            "value": 3,
+            "nodeColorTarget": "#00BFFF"
+        },
+        {
+            "source": "Finanzen",
+            "target": "glp/pvl",
+            "value": 2,
+            "nodeColorTarget": "#98D812"
+        },
+        {
+            "source": "Finanzen",
+            "target": "SP-JUSO-PSA/PS-JS-PSA",
+            "value": 4,
+            "nodeColorTarget": "#EE0000"
+        },
+        {
+            "source": "Finanzen",
+            "target": "SVP/UDC",
+            "value": 7,
+            "nodeColorTarget": "#008B00"
+        },
+        {
+            "source": "Gesundheit-undFürsorge",
+            "target": "BDP/PBD",
+            "value": 5,
+            "nodeColorTarget": "#FF7F00"
+        },
+        {
+            "source": "Gesundheit-undFürsorge",
+            "target": "EVP/PEV",
+            "value": 1,
+            "nodeColorTarget": "#FFCC00"
+        },
+        {
+            "source": "Gesundheit-undFürsorge",
+            "target": "FDP/PLR",
+            "value": 7,
+            "nodeColorTarget": "#00BFFF"
+        },
+        {
+            "source": "Gesundheit-undFürsorge",
+            "target": "SP-JUSO-PSA/PS-JS-PSA",
+            "value": 9,
+            "nodeColorTarget": "#EE0000"
+        },
+        {
+            "source": "Gesundheit-undFürsorge",
+            "target": "SVP/UDC",
+            "value": 6,
+            "nodeColorTarget": "#008B00"
+        },
+        {
+            "source": "Justiz-Gemeinde-undKirchen",
+            "target": "EVP/PEV",
+            "value": 1,
+            "nodeColorTarget": "#FFCC00"
+        },
+        {
+            "source": "Justiz-Gemeinde-undKirchen",
+            "target": "FDP/PLR",
+            "value": 1,
+            "nodeColorTarget": "#00BFFF"
+        },
+        {
+            "source": "Justiz-Gemeinde-undKirchen",
+            "target": "SVP/UDC",
+            "value": 2,
+            "nodeColorTarget": "#008B00"
+        },
+        {
+            "source": "Polizei-undMilitär",
+            "target": "EDU/UDF",
+            "value": 1,
+            "nodeColorTarget": "#3A5FCD"
+        },
+        {
+            "source": "Polizei-undMilitär",
+            "target": "glp/pvl",
+            "value": 4,
+            "nodeColorTarget": "#98D812"
+        },
+        {
+            "source": "Polizei-undMilitär",
+            "target": "SP-JUSO-PSA/PS-JS-PSA",
+            "value": 3,
+            "nodeColorTarget": "#EE0000"
+        },
+        {
+            "source": "Polizei-undMilitär",
+            "target": "SVP/UDC",
+            "value": 5,
+            "nodeColorTarget": "#008B00"
+        },
+        {
+            "source": "Staatskanzlei",
+            "target": "FDP/PLR",
+            "value": 8,
+            "nodeColorTarget": "#00BFFF"
+        },
+        {
+            "source": "Volkswirtschaft",
+            "target": "Grüne/LesVerts",
+            "value": 7,
+            "nodeColorTarget": "#00C500"
+        },
+        {
+            "source": "BDP/PBD",
+            "target": "Abgelehnt",
+            "value": 3,
+            "nodeColorTarget": "red"
+        },
+        {
+            "source": "BDP/PBD",
+            "target": "Angenommen",
+            "value": 9,
+            "nodeColorTarget": "green"
+        },
+        {
+            "source": "EDU/UDF",
+            "target": "Abgelehnt",
+            "value": 1,
+            "nodeColorTarget": "red"
+        },
+        {
+            "source": "EVP/PEV",
+            "target": "Abgelehnt",
+            "value": 1,
+            "nodeColorTarget": "red"
+        },
+        {
+            "source": "EVP/PEV",
+            "target": "Angenommen",
+            "value": 3,
+            "nodeColorTarget": "green"
+        },
+        {
+            "source": "FDP/PLR",
+            "target": "Abgelehnt",
+            "value": 4,
+            "nodeColorTarget": "red"
+        },
+        {
+            "source": "FDP/PLR",
+            "target": "Angenommen",
+            "value": 19,
+            "nodeColorTarget": "green"
+        },
+        {
+            "source": "glp/pvl",
+            "target": "Abgelehnt",
+            "value": 3,
+            "nodeColorTarget": "red"
+        },
+        {
+            "source": "glp/pvl",
+            "target": "Angenommen",
+            "value": 5,
+            "nodeColorTarget": "green"
+        },
+        {
+            "source": "Grüne/LesVerts",
+            "target": "Abgelehnt",
+            "value": 5,
+            "nodeColorTarget": "red"
+        },
+        {
+            "source": "Grüne/LesVerts",
+            "target": "Angenommen",
+            "value": 8,
+            "nodeColorTarget": "green"
+        },
+        {
+            "source": "SP-JUSO-PSA/PS-JS-PSA",
+            "target": "Abgelehnt",
+            "value": 4,
+            "nodeColorTarget": "red"
+        },
+        {
+            "source": "SP-JUSO-PSA/PS-JS-PSA",
+            "target": "Angenommen",
+            "value": 20,
+            "nodeColorTarget": "green"
+        },
+        {
+            "source": "SVP/UDC",
+            "target": "Abgelehnt",
+            "value": 10,
+            "nodeColorTarget": "red"
+        },
+        {
+            "source": "SVP/UDC",
+            "target": "Angenommen",
+            "value": 21,
+            "nodeColorTarget": "green"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "BDP/PBD",
+            "nodeColor": "#FF7F00"
+        },
+        {
+            "name": "EDU/UDF",
+            "nodeColor": "#3A5FCD"
+        },
+        {
+            "name": "EVP/PEV",
+            "nodeColor": "#FFCC00"
+        },
+        {
+            "name": "FDP/PLR",
+            "nodeColor": "#00BFFF"
+        },
+        {
+            "name": "glp/pvl",
+            "nodeColor": "#98D812"
+        },
+        {
+            "name": "Grüne/LesVerts",
+            "nodeColor": "#00C500"
+        },
+        {
+            "name": "SP-JUSO-PSA/PS-JS-PSA",
+            "nodeColor": "#EE0000"
+        },
+        {
+            "name": "SVP/UDC",
+            "nodeColor": "#008B00"
+        },
+        {
+            "name": "Abgelehnt",
+            "nodeColor": "red"
+        },
+        {
+            "name": "Angenommen",
+            "nodeColor": "green"
+        },
+        {
+            "name": "Bau-Verkehr-undEnergie",
+            "nodeColor": "darkgrey"
+        },
+        {
+            "name": "Erziehung",
+            "nodeColor": "darkgray"
+        },
+        {
+            "name": "Finanzen",
+            "nodeColor": "darkgray"
+        },
+        {
+            "name": "Gesundheit-undFürsorge",
+            "nodeColor": "darkgray"
+        },
+        {
+            "name": "Justiz-Gemeinde-undKirchen",
+            "nodeColor": "darkgray"
+        },
+        {
+            "name": "Polizei-undMilitär",
+            "nodeColor": "darkgray"
+        },
+        {
+            "name": "Staatskanzlei",
+            "nodeColor": "darkgray"
+        },
+        {
+            "name": "Volkswirtschaft",
+            "nodeColor": "darkgray"
+        }
+    ]}
