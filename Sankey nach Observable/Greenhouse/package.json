@@ -1,0 +1,14 @@
+{
+  "name": "@reinpk/carbon-flow-diagram",
+  "main": "fea2a5cbf46eb5b1@358.js",
+  "version": "358.0.0",
+  "homepage": "https://observablehq.com/@reinpk/carbon-flow-diagram",
+  "author": {
+    "name": "Peter Reinhardt",
+    "url": "https://observablehq.com/@reinpk"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}

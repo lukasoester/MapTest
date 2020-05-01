@@ -1,0 +1,346 @@
+{
+  "nodes": [
+    {
+      "name": "Limestone",
+      "category": "Limestone",
+      "equation": "CaCO3"
+    },
+    {
+      "name": "Coal",
+      "category": "Coal",
+      "equation": "C"
+    },
+    {
+      "name": "Oil",
+      "category": "Oil",
+      "equation": "CxHy"
+    },
+    {
+      "name": "Natural Gas",
+      "category": "Natural Gas",
+      "equation": "CH4"
+    },
+    {
+      "name": "Biomass",
+      "category": "Biomass",
+      "equation": "Cellulose"
+    },
+
+
+
+
+    {
+      "name": "Concrete",
+      "category": "Industrial Process",
+      "equation": "Calcination"
+    },
+    {
+      "name": "Steel",
+      "category": "Industrial Process",
+      "equation": "Iron Oxide Reduction with Coke or Syngas"
+    },
+    {
+      "name": "Aluminum",
+      "category": "Industrial Process",
+      "equation": "Hall-Héroult Electrolysis with Coke"
+    },
+
+
+    {
+      "name": "Electricity",
+      "category": "Energy",
+      "equation": "Burning"
+    },
+    {
+      "name": "Transport",
+      "category": "Energy",
+      "equation": "Burning"
+    },
+
+
+    {
+      "name": "Hydrogen",
+      "category": "Chemical Process",
+      "equation": "Steam Methane Reformation"
+    },
+
+
+    {
+      "name": "Industrial Heat",
+      "category": "Heat",
+      "equation": "Burning"
+    },
+    {
+      "name": "Residential Heat",
+      "category": "Heat",
+      "equation": "Burning"
+    },
+
+
+    {
+      "name": "Livestock",
+      "category": "Microbial",
+      "equation": "Enteric Fermentation"
+    },
+    {
+      "name": "Landfills",
+      "category": "Microbial",
+      "equation": "Anaerobic Digestion"
+    },
+    {
+      "name": "Land Use Change",
+      "category": "Microbial",
+      "equation": "Burning & Anaerobic Digestion"
+    },
+
+    {
+      "name": "Methane Leaks",
+      "category": "Leaks",
+      "equation": "Leak"
+    },
+    {
+      "name": "Tundra",
+      "category": "Leaks",
+      "equation": "Seep"
+    },
+
+
+
+
+    {
+      "name": "Carbon Dioxide",
+      "category": "Carbon Dioxide",
+      "equation": "CO2"
+    },
+    {
+      "name": "Methane",
+      "category": "Natural Gas",
+      "equation": "CH4"
+    },
+    {
+      "name": "NOx",
+      "category": "Nitrogen Oxides",
+      "equation": "NOx"
+    },
+
+
+    {
+      "name": "Refrigerant",
+      "category": "Refrigerant",
+      "equation": "Refrigerant"
+    },
+    {
+      "name": "Refrigerant Leaks",
+      "category": "Leaks",
+      "equation": "Leak"
+    },
+    {
+      "name": "Hydroflourocarbon",
+      "category": "Hydroflourocarbon",
+      "equation": "HFC"
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 5,
+      "value": 1.0
+    },
+    {
+      "source": 5,
+      "target": 18,
+      "value": 1.0
+    },
+
+    {
+      "source": 1,
+      "target": 6,
+      "value": 2.6
+    },
+    {
+      "source": 3,
+      "target": 6,
+      "value": 0.3
+    },
+    {
+      "source": 6,
+      "target": 18,
+      "value": 2.9
+    },
+
+    {
+      "source": 1,
+      "target": 7,
+      "value": 0.2
+    },
+    {
+      "source": 7,
+      "target": 18,
+      "value": 0.2
+    },
+
+    {
+      "source": 1,
+      "target": 8,
+      "value": 10.1
+    },
+    {
+      "source": 2,
+      "target": 8,
+      "value": 0.5
+    },
+    {
+      "source": 3,
+      "target": 8,
+      "value": 3.3
+    },
+    {
+      "source": 8,
+      "target": 18,
+      "value": 13.9
+    },
+    {
+      "source": 8,
+      "target": 20,
+      "value": 3.0
+    },
+
+    {
+      "source": 2,
+      "target": 9,
+      "value": 8.3
+    },
+    {
+      "source": 9,
+      "target": 18,
+      "value": 8.3
+    },
+    {
+      "source": 9,
+      "target": 20,
+      "value": 3.0
+    },
+
+    
+    {
+      "source": 3,
+      "target": 10,
+      "value": 0.7
+    },
+    {
+      "source": 10,
+      "target": 18,
+      "value": 0.7
+    },
+
+    
+    {
+      "source": 1,
+      "target": 11,
+      "value": 1.8
+    },
+    {
+      "source": 2,
+      "target": 11,
+      "value": 0.3
+    },
+    {
+      "source": 3,
+      "target": 11,
+      "value": 1.8
+    },
+    {
+      "source": 11,
+      "target": 18,
+      "value": 3.9
+    },
+
+    {
+      "source": 1,
+      "target": 12,
+      "value": 1.8
+    },
+    {
+      "source": 3,
+      "target": 12,
+      "value": 1.8
+    },
+    {
+      "source": 12,
+      "target": 18,
+      "value": 3.6
+    },
+
+
+    {
+      "source": 4,
+      "target": 13,
+      "value": 2
+    },
+    {
+      "source": 13,
+      "target": 19,
+      "value": 2
+    },
+
+    {
+      "source": 4,
+      "target": 14,
+      "value": 0.8
+    },
+    {
+      "source": 14,
+      "target": 19,
+      "value": 0.8
+    },
+
+    {
+      "source": 4,
+      "target": 15,
+      "value": 2.8
+    },
+    {
+      "source": 15,
+      "target": 18,
+      "value": 2.8
+    },
+    {
+      "source": 15,
+      "target": 20,
+      "value": 2.4
+    },
+
+    {
+      "source": 3,
+      "target": 16,
+      "value": 1.8
+    },
+    {
+      "source": 16,
+      "target": 19,
+      "value": 1.8
+    },
+
+    {
+      "source": 3,
+      "target": 17,
+      "value": 0.5
+    },
+    {
+      "source": 17,
+      "target": 19,
+      "value": 0.5
+    },
+
+    {
+      "source": 21,
+      "target": 22,
+      "value": 1
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "value": 1
+    }
+  ]
+}

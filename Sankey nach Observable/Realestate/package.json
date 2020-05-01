@@ -1,0 +1,14 @@
+{
+  "name": "@adrianturcato/real-estate-industry",
+  "main": "ca52a58885804041@286.js",
+  "version": "286.0.0",
+  "homepage": "https://observablehq.com/@adrianturcato/real-estate-industry",
+  "author": {
+    "name": "adrianturcato",
+    "url": "https://observablehq.com/@adrianturcato"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
